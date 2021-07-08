@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <GlobalStyle />
       <Switch location={location} key={location.pathname}>
-        <Route path="/home" exact>
+        <Route path="" exact>
           <IntroPage />
         </Route>
       </Switch>
