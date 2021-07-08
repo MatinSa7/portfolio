@@ -2,13 +2,23 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
-import { lineAnimation } from "../animation";
+import {
+  lineAnimation,
+  lineAnimation2,
+  lineAnimation3,
+  pageAnimation,
+  descriptionAnimation,
+} from "../animation";
 
 const IntroPage = () => {
   const { pathname } = useLocation();
   const [hoverStatus, setHoverStatus] = useState(0);
   return (
-    <StyledIntroPageContainer>
+    <StyledIntroPageContainer
+      initial="hidden"
+      animate="show"
+      variants={pageAnimation}
+    >
       <StyledLogoArea>
         <h1>logo</h1>
       </StyledLogoArea>
@@ -19,50 +29,63 @@ const IntroPage = () => {
           assumenda. Delectus.
         </p>
         <StyledList>
-          <StyledLineContainer
-            onMouseEnter={() => setHoverStatus(1)}
-            onMouseLeave={() => setHoverStatus(0)}
-          >
-            <a href="">balls</a>
-            {hoverStatus === 1 && (
-              <StyledLine
-                initial="hidden"
-                animate="show"
-                variants={lineAnimation}
-              ></StyledLine>
-            )}
-          </StyledLineContainer>
-          <StyledLineContainer
-            onMouseEnter={() => setHoverStatus(2)}
-            onMouseLeave={() => setHoverStatus(0)}
-          >
-            <a href="">tentacles</a>
-            {hoverStatus === 2 && (
-              <StyledLine
-                initial="hidden"
-                animate="show"
-                variants={lineAnimation}
-              ></StyledLine>
-            )}
-          </StyledLineContainer>
-          <StyledLineContainer
-            onMouseEnter={() => setHoverStatus(3)}
-            onMouseLeave={() => setHoverStatus(0)}
-          >
-            <a href="">tentacles</a>
-            {hoverStatus === 3 && (
-              <StyledLine
-                initial="hidden"
-                animate="show"
-                variants={lineAnimation}
-              ></StyledLine>
-            )}
-          </StyledLineContainer>
+          <StyledHide>
+            <StyledLineContainer
+              onMouseEnter={() => setHoverStatus(1)}
+              onMouseLeave={() => setHoverStatus(0)}
+              variants={descriptionAnimation}
+            >
+              <a href="">Intro</a>
+              {hoverStatus === 1 && (
+                <StyledLine
+                  initial="hidden"
+                  animate="show"
+                  variants={lineAnimation}
+                ></StyledLine>
+              )}
+            </StyledLineContainer>
+          </StyledHide>
+          <StyledHide>
+            <StyledLineContainer
+              onMouseEnter={() => setHoverStatus(2)}
+              onMouseLeave={() => setHoverStatus(0)}
+              variants={descriptionAnimation}
+            >
+              <a href="">Skills</a>
+              {hoverStatus === 2 && (
+                <StyledLine
+                  initial="hidden"
+                  animate="show"
+                  variants={lineAnimation2}
+                ></StyledLine>
+              )}
+            </StyledLineContainer>
+          </StyledHide>
+          <StyledHide>
+            <StyledLineContainer
+              onMouseEnter={() => setHoverStatus(3)}
+              onMouseLeave={() => setHoverStatus(0)}
+              variants={descriptionAnimation}
+            >
+              <a href="">Projects</a>
+              {hoverStatus === 3 && (
+                <StyledLine
+                  initial="hidden"
+                  animate="show"
+                  variants={lineAnimation3}
+                ></StyledLine>
+              )}
+            </StyledLineContainer>
+          </StyledHide>
         </StyledList>
       </StyledDescription>
     </StyledIntroPageContainer>
   );
 };
+
+const StyledHide = styled.div`
+  overflow: hidden;
+`;
 
 const StyledIntroPageContainer = styled(motion.div)`
   width: 80%;
@@ -75,6 +98,7 @@ const StyledList = styled(motion.ul)`
   flex-direction: column;
   padding-left: 5rem;
   a {
+    padding-left: 0.2rem;
     font-weight: 500;
     font-size: calc(0.8vw + 1rem);
     padding-bottom: 0.5rem;
