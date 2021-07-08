@@ -3,9 +3,63 @@ export const lineAnimation = {
     width: 0,
   },
   show: {
-    width: 120,
+    width: "50%",
     transition: {
       duration: 0.5,
+      ease: "easeOut",
+    },
+  },
+};
+export const lineAnimation2 = {
+  hidden: {
+    width: 0,
+  },
+  show: {
+    width: "52.5%",
+    transition: {
+      duration: 0.5,
+      ease: "easeOut",
+    },
+  },
+};
+
+export const lineAnimation3 = {
+  hidden: {
+    width: 0,
+  },
+  show: {
+    width: "80%",
+    transition: {
+      duration: 0.5,
+      ease: "easeOut",
+    },
+  },
+};
+
+export const pageAnimation = {
+  hidden: {
+    opacity: 0,
+    y: 300,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1.5,
+      when: "beforeChildren",
+      staggerChildren: 0.25,
+    },
+  },
+};
+
+export const descriptionAnimation = {
+  hidden: {
+    y: 200,
+  },
+  show: {
+    y: 0,
+    transition: {
+      duration: 1,
       ease: "easeOut",
     },
   },
