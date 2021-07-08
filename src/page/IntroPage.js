@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
+import { lineAnimation } from "../animation";
 
 const IntroPage = () => {
   const { pathname } = useLocation();
@@ -23,21 +24,39 @@ const IntroPage = () => {
             onMouseLeave={() => setHoverStatus(0)}
           >
             <a href="">balls</a>
-            {hoverStatus === 1 && <StyledLine></StyledLine>}
+            {hoverStatus === 1 && (
+              <StyledLine
+                initial="hidden"
+                animate="show"
+                variants={lineAnimation}
+              ></StyledLine>
+            )}
           </StyledLineContainer>
           <StyledLineContainer
             onMouseEnter={() => setHoverStatus(2)}
             onMouseLeave={() => setHoverStatus(0)}
           >
             <a href="">tentacles</a>
-            {hoverStatus === 2 && <StyledLine></StyledLine>}
+            {hoverStatus === 2 && (
+              <StyledLine
+                initial="hidden"
+                animate="show"
+                variants={lineAnimation}
+              ></StyledLine>
+            )}
           </StyledLineContainer>
           <StyledLineContainer
             onMouseEnter={() => setHoverStatus(3)}
             onMouseLeave={() => setHoverStatus(0)}
           >
             <a href="">tentacles</a>
-            {hoverStatus === 3 && <StyledLine></StyledLine>}
+            {hoverStatus === 3 && (
+              <StyledLine
+                initial="hidden"
+                animate="show"
+                variants={lineAnimation}
+              ></StyledLine>
+            )}
           </StyledLineContainer>
         </StyledList>
       </StyledDescription>
@@ -56,6 +75,7 @@ const StyledList = styled(motion.ul)`
   flex-direction: column;
   padding-left: 5rem;
   a {
+    font-weight: 500;
     font-size: calc(0.8vw + 1rem);
     padding-bottom: 0.5rem;
     text-decoration: none;
@@ -72,7 +92,7 @@ const StyledDescription = styled(motion.div)`
   p {
     flex: 5 1 20rem;
     font-size: calc(2vw + 1rem);
-    font-weight: 600;
+    font-weight: 400;
   }
 `;
 
