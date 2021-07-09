@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
 import {
@@ -9,7 +9,6 @@ import {
   pageAnimation,
   descriptionAnimation,
 } from "../animation";
-import cursor from "../page/cursor.svg";
 
 const IntroPage = () => {
   const { pathname } = useLocation();
@@ -80,6 +79,9 @@ const IntroPage = () => {
           </StyledHide>
         </StyledList>
       </StyledDescription>
+      <StyledTextLine></StyledTextLine>
+      <StyledScrollingText>salam</StyledScrollingText>
+      <StyledTextLine></StyledTextLine>
     </StyledIntroPageContainer>
   );
 };
@@ -91,6 +93,7 @@ const StyledHide = styled.div`
 const StyledIntroPageContainer = styled(motion.div)`
   width: 80%;
   margin: auto;
+  overflow: hidden;
 `;
 
 const StyledList = styled(motion.ul)`
@@ -143,6 +146,33 @@ const StyledLine = styled(motion.div)`
   z-index: -1;
   height: 40%;
   width: 100%;
+`;
+
+const StyledTextLine = styled(motion.div)`
+  width: 100%;
+  min-height: 0.2rem;
+  background: #1f1f1f;
+`;
+
+const scroll = keyframes`
+  from {
+    left: 0%;
+  }
+
+  to {
+    /* left: auto; */
+    left: 100%;
+  }
+`;
+
+const StyledScrollingText = styled(motion.p)`
+  position: relative;
+  white-space: nowrap;
+  animation-name: ${scroll};
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
 `;
 
 export default IntroPage;
