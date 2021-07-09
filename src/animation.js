@@ -47,7 +47,7 @@ export const pageAnimation = {
     transition: {
       duration: 1.5,
       when: "beforeChildren",
-      staggerChildren: 0.25,
+      staggerChildren: 0.3,
     },
   },
 };

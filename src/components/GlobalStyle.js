@@ -8,7 +8,10 @@ const GlobalStyle = createGlobalStyle`
     scrollbar-width: thin;
     scrollbar-color: rgba(155, 155, 155, 0.7) transparent;
     font-family: 'Space Grotesk', sans-serif;
+    }
 
+    body {
+        cursor: url("https://i.imgur.com/eANvpGO.png"), auto;
     }
     
     *::-webkit-scrollbar {
