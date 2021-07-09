@@ -9,6 +9,7 @@ import {
   pageAnimation,
   descriptionAnimation,
 } from "../animation";
+import cursor from "../page/cursor.svg";
 
 const IntroPage = () => {
   const { pathname } = useLocation();
