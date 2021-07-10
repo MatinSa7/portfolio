@@ -2,6 +2,7 @@ import React from "react";
 import { Switch, Route, useLocation } from "react-router-dom";
 import IntroPage from "./page/IntroPage";
 import GlobalStyle from "./components/GlobalStyle";
+import ScrollText from "./components/ScrollText";
 
 function App() {
   const location = useLocation();
@@ -12,6 +13,7 @@ function App() {
       <Switch location={location} key={location.pathname}>
         <Route path="" exact>
           <IntroPage />
+          <ScrollText />
         </Route>
       </Switch>
     </div>
