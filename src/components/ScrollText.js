@@ -5,9 +5,17 @@ import { motion } from "framer-motion";
 const ScrollText = () => {
   return (
     <ScrollTextContainer>
-      <StyledTextLine></StyledTextLine>
+      <StyledTextLine
+        transition={{ duration: 2 }}
+        initial={{ width: "0%", opacity: 0 }}
+        animate={{ width: "100%", opacity: 1 }}
+      ></StyledTextLine>
       <StyledScrollingText>Salam Brothers</StyledScrollingText>
-      <StyledTextLine></StyledTextLine>
+      <StyledTextLine
+        transition={{ duration: 2 }}
+        initial={{ width: "0%", opacity: 0 }}
+        animate={{ width: "100%", opacity: 1 }}
+      ></StyledTextLine>
     </ScrollTextContainer>
   );
 };
