@@ -79,9 +79,6 @@ const IntroPage = () => {
           </StyledHide>
         </StyledList>
       </StyledDescription>
-      <StyledTextLine></StyledTextLine>
-      <StyledScrollingText>salam</StyledScrollingText>
-      <StyledTextLine></StyledTextLine>
     </StyledIntroPageContainer>
   );
 };
@@ -146,33 +143,6 @@ const StyledLine = styled(motion.div)`
   z-index: -1;
   height: 40%;
   width: 100%;
-`;
-
-const StyledTextLine = styled(motion.div)`
-  width: 100%;
-  min-height: 0.2rem;
-  background: #1f1f1f;
-`;
-
-const scroll = keyframes`
-  from {
-    left: 0%;
-  }
-
-  to {
-    /* left: auto; */
-    left: 100%;
-  }
-`;
-
-const StyledScrollingText = styled(motion.p)`
-  position: relative;
-  white-space: nowrap;
-  animation-name: ${scroll};
-  animation-duration: 10s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
 `;
 
 export default IntroPage;
