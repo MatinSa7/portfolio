@@ -12,7 +12,7 @@ import {
 
 const IntroPage = () => {
   const { pathname } = useLocation();
-  const [hoverStatus, setHoverStatus] = useState(0);
+  const [hoverStatus, setHoverStatus] = useState(1);
   return (
     <StyledIntroPageContainer
       initial="hidden"
@@ -32,7 +32,7 @@ const IntroPage = () => {
           <StyledHide>
             <StyledLineContainer
               onMouseEnter={() => setHoverStatus(1)}
-              onMouseLeave={() => setHoverStatus(0)}
+              onMouseLeave={() => setHoverStatus(hoverStatus)}
               variants={descriptionAnimation}
             >
               <a href="">Intro</a>
@@ -48,7 +48,7 @@ const IntroPage = () => {
           <StyledHide>
             <StyledLineContainer
               onMouseEnter={() => setHoverStatus(2)}
-              onMouseLeave={() => setHoverStatus(0)}
+              onMouseLeave={() => setHoverStatus(hoverStatus)}
               variants={descriptionAnimation}
             >
               <a href="">Skills</a>
@@ -64,7 +64,7 @@ const IntroPage = () => {
           <StyledHide>
             <StyledLineContainer
               onMouseEnter={() => setHoverStatus(3)}
-              onMouseLeave={() => setHoverStatus(0)}
+              onMouseLeave={() => setHoverStatus(hoverStatus)}
               variants={descriptionAnimation}
             >
               <a href="">Projects</a>
@@ -91,6 +91,7 @@ const StyledIntroPageContainer = styled(motion.div)`
   width: 80%;
   margin: auto;
   overflow: hidden;
+  cursor: url("https://i.imgur.com/eANvpGO.png"), auto;
 `;
 
 const StyledList = styled(motion.ul)`

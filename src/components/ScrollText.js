@@ -10,7 +10,7 @@ const ScrollText = () => {
         initial={{ width: "0%", opacity: 0 }}
         animate={{ width: "100%", opacity: 1 }}
       ></StyledTextLine>
-      <StyledScrollingText>Salam Brothers</StyledScrollingText>
+      <StyledScrollingText>↓↓ Check out my work ↓↓</StyledScrollingText>
       <StyledTextLine
         transition={{ duration: 2 }}
         initial={{ width: "0%", opacity: 0 }}
@@ -21,13 +21,14 @@ const ScrollText = () => {
 };
 
 const ScrollTextContainer = styled(motion.div)`
-  margin-top: 4rem;
+  margin-top: 3rem;
   overflow: hidden;
+  padding-bottom: 10rem;
 `;
 
 const StyledTextLine = styled(motion.div)`
   width: 100%;
-  min-height: 0.15rem;
+  min-height: 0.1rem;
   background: #1f1f1f;
 `;
 

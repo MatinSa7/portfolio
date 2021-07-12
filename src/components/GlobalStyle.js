@@ -13,6 +13,8 @@ const GlobalStyle = createGlobalStyle`
     body {
         cursor: url("https://i.imgur.com/eANvpGO.png"), auto;
     }
+
+
     
     *::-webkit-scrollbar {
     width: 5px;
