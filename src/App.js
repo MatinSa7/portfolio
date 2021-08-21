@@ -5,6 +5,7 @@ import GlobalStyle from "./components/GlobalStyle";
 import ScrollText from "./components/ScrollText";
 import SkillsPage from "./page/SkillsPage";
 import ProjectsPage from "./page/ProjectsPage";
+import ExamPage from "./page/ExamPage";
 
 function App() {
   const location = useLocation();
@@ -13,11 +14,29 @@ function App() {
     <div className="App">
       <GlobalStyle />
       <Switch location={location} key={location.pathname}>
-        <Route path="" exact>
+        <Route path="/" exact>
           <IntroPage />
           <ScrollText />
           <SkillsPage />
           <ProjectsPage />
+        </Route>
+        <Route path="/Exam" exact>
+          <ExamPage />
+        </Route>
+        <Route path="/StableMatch" exact>
+          <ExamPage />
+        </Route>
+        <Route path="/CLNx" exact>
+          <ExamPage />
+        </Route>
+        <Route path="/Pulsate" exact>
+          <ExamPage />
+        </Route>
+        <Route path="/Mattify" exact>
+          <ExamPage />
+        </Route>
+        <Route path="/Bot" exact>
+          <ExamPage />
         </Route>
       </Switch>
     </div>
