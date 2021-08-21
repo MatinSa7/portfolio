@@ -5,28 +5,26 @@ import { useLocation } from "react-router-dom";
 import invigilationscript from "../image/invig.png";
 import schedulephoto from "../image/schedule photo.png";
 import smpsolver from "../image/smpsolver.png";
-
+import lowfidproto from "../image/lowfidproto.png";
+import clnxdefault from "../image/clnxdefault.png";
 
 const ProjectsPage = () => {
   return (
     <StyledProjectsPageContainer>
       <h1>Projects:</h1>
       <StyledCardContainer>
-        <motion.a href="" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+        <motion.a
+          href="/Exam"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
           Exam Invigilation Scheduling
         </motion.a>
-        <StyledImageContainer>
-          <img src={invigilationscript} alt="" />
-          <img src={schedulephoto} alt="" />
-        </StyledImageContainer>
       </StyledCardContainer>
       <StyledCardContainer>
         <motion.a whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="">
           Stable Matching Solver
         </motion.a>
-        <StyledImageContainer>
-          <img src={smpsolver} alt="" />
-        </StyledImageContainer>
       </StyledCardContainer>
       <StyledCardContainer>
         <motion.a whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="">
