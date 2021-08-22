@@ -6,6 +6,7 @@ import ScrollText from "./components/ScrollText";
 import SkillsPage from "./page/SkillsPage";
 import ProjectsPage from "./page/ProjectsPage";
 import ExamPage from "./page/ExamPage";
+import DetailedSkillsPage from "./page/DetailedSkillsPage";
 
 function App() {
   const location = useLocation();
@@ -37,6 +38,9 @@ function App() {
         </Route>
         <Route path="/Bot" exact>
           <ExamPage />
+        </Route>
+        <Route path="/Skills" exact>
+          <DetailedSkillsPage />
         </Route>
       </Switch>
     </div>
