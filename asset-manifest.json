@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.js": "/portfolio/static/js/main.2f20672c.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.2f20672c.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.3b0e0610.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.3b0e0610.js.map",
+    "static/js/2.cfdd882c.chunk.js": "/portfolio/static/js/2.cfdd882c.chunk.js",
+    "static/js/2.cfdd882c.chunk.js.map": "/portfolio/static/js/2.cfdd882c.chunk.js.map",
+    "static/js/3.15a77a66.chunk.js": "/portfolio/static/js/3.15a77a66.chunk.js",
+    "static/js/3.15a77a66.chunk.js.map": "/portfolio/static/js/3.15a77a66.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/js/2.cfdd882c.chunk.js.LICENSE.txt": "/portfolio/static/js/2.cfdd882c.chunk.js.LICENSE.txt",
+    "static/media/clnxdefault.e7f37631.png": "/portfolio/static/media/clnxdefault.e7f37631.png",
+    "static/media/invig.36d13106.png": "/portfolio/static/media/invig.36d13106.png",
+    "static/media/lowfidproto.6f610b43.png": "/portfolio/static/media/lowfidproto.6f610b43.png",
+    "static/media/schedule photo.8b5bc876.png": "/portfolio/static/media/schedule photo.8b5bc876.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3b0e0610.js",
+    "static/js/2.cfdd882c.chunk.js",
+    "static/js/main.2f20672c.chunk.js"
+  ]
+}
