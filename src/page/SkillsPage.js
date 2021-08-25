@@ -45,7 +45,7 @@ const StyledLineContainer = styled(motion.div)`
 
 const StyledLine = styled(motion.div)`
   position: absolute;
-  background: #8f6aff;
+  background: #FF3F00;
   bottom: 15%;
   z-index: -1;
   height: 25%;

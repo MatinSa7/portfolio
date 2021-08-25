@@ -53,11 +53,11 @@ const IntroPage = () => {
             >
               <a href="">Skills</a>
               {hoverStatus === 2 && (
-                <StyledLine
+                <StyledLine2
                   initial="hidden"
                   animate="show"
                   variants={lineAnimation2}
-                ></StyledLine>
+                ></StyledLine2>
               )}
             </StyledLineContainer>
           </StyledHide>
@@ -69,11 +69,11 @@ const IntroPage = () => {
             >
               <a href="">Projects</a>
               {hoverStatus === 3 && (
-                <StyledLine
+                <StyledLine3
                   initial="hidden"
                   animate="show"
                   variants={lineAnimation3}
-                ></StyledLine>
+                ></StyledLine3>
               )}
             </StyledLineContainer>
           </StyledHide>
@@ -145,5 +145,24 @@ const StyledLine = styled(motion.div)`
   height: 40%;
   width: 100%;
 `;
+
+const StyledLine2 = styled(motion.div)`
+  position: absolute;
+  background: #FFDF6B;
+  bottom: 0%;
+  z-index: -1;
+  height: 40%;
+  width: 100%;
+`;
+
+const StyledLine3 = styled(motion.div)`
+  position: absolute;
+  background: #32E0C4;
+  bottom: 0%;
+  z-index: -1;
+  height: 40%;
+  width: 100%;
+`;
+
 
 export default IntroPage;
