@@ -43,7 +43,7 @@ export const lineAnimation4 = {
   show: {
     width: "26%",
     transition: {
-      duration: 0.5,
+      duration: 1.5,
       ease: "easeOut",
     },
   },
@@ -74,6 +74,17 @@ export const descriptionAnimation = {
     transition: {
       duration: 1,
       ease: "easeOut",
+    },
+  },
+};
+
+export const scrollReveal = {
+  hidden: { opacity: 0, scale: 1.2, transition: { duration: 0.5 } },
+  show: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 0.75,
     },
   },
 };
