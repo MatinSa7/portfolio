@@ -7,10 +7,18 @@ import schedulephoto from "../image/schedule photo.png";
 import smpsolver from "../image/smpsolver.png";
 import lowfidproto from "../image/lowfidproto.png";
 import clnxdefault from "../image/clnxdefault.png";
+import { useScroll } from "../components/useScroll";
+import { scrollReveal } from "../animation";
 
 const ProjectsPage = () => {
+  const [element, controls] = useScroll();
   return (
-    <StyledProjectsPageContainer>
+    <StyledProjectsPageContainer
+      variants={scrollReveal}
+      ref={element}
+      animate={controls}
+      initial="hidden"
+    >
       <h1>Projects:</h1>
       <StyledCardContainer>
         <motion.a

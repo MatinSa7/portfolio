@@ -148,7 +148,7 @@ const StyledLine = styled(motion.div)`
 
 const StyledLine2 = styled(motion.div)`
   position: absolute;
-  background: #FFDF6B;
+  background: #ffdf6b;
   bottom: 0%;
   z-index: -1;
   height: 40%;
@@ -157,12 +157,11 @@ const StyledLine2 = styled(motion.div)`
 
 const StyledLine3 = styled(motion.div)`
   position: absolute;
-  background: #32E0C4;
+  background: #32e0c4;
   bottom: 0%;
   z-index: -1;
   height: 40%;
   width: 100%;
 `;
-
 
 export default IntroPage;

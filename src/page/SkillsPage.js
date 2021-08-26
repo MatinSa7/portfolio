@@ -4,29 +4,31 @@ import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
 import { lineAnimation4 } from "../animation";
 
+import { useScroll } from "../components/useScroll";
+import { scrollReveal } from "../animation";
+
 const SkillsPage = () => {
+  const [element, controls] = useScroll();
   const [hoverStatus, setHoverStatus] = useState(0);
   return (
-    <StyledSkillsContainer>
+    <StyledSkillsContainer
+      variants={scrollReveal}
+      ref={element}
+      animate={controls}
+      initial="hidden"
+    >
       <a href="/Skills">
         <StyledSkill0></StyledSkill0>
         <StyledSkill1></StyledSkill1>
-
         <StyledSkill2>
-          <StyledLineContainer
-            onMouseEnter={() => setHoverStatus(1)}
-            onMouseLeave={() => setHoverStatus(0)}
-          >
-            <div>
-              <h1>Skills.</h1>
-              {hoverStatus === 1 && (
-                <StyledLine
-                  initial="hidden"
-                  animate="show"
-                  variants={lineAnimation4}
-                ></StyledLine>
-              )}
-            </div>
+          <StyledLineContainer>
+            <h1>Skills.</h1>
+            <StyledLine
+              initial="hidden"
+              animate={controls}
+              ref={element}
+              variants={lineAnimation4}
+            ></StyledLine>
           </StyledLineContainer>
           <p>(Click for Details)</p>
         </StyledSkill2>
@@ -45,7 +47,7 @@ const StyledLineContainer = styled(motion.div)`
 
 const StyledLine = styled(motion.div)`
   position: absolute;
-  background: #FF3F00;
+  background: #ff3f00;
   bottom: 15%;
   z-index: -1;
   height: 25%;
