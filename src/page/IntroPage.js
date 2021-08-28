@@ -20,7 +20,7 @@ const IntroPage = () => {
       variants={pageAnimation}
     >
       <StyledLogoArea>
-        <h1>logo</h1>
+        <h1>Matin</h1>
       </StyledLogoArea>
       <StyledDescription>
         <p>
