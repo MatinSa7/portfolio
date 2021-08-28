@@ -9,6 +9,7 @@ import lowfidproto from "../image/lowfidproto.png";
 import clnxdefault from "../image/clnxdefault.png";
 import { useScroll } from "../components/useScroll";
 import { scrollReveal } from "../animation";
+import { lineAnimation5 } from "../animation";
 
 const ProjectsPage = () => {
   const [element, controls] = useScroll();
@@ -57,6 +58,20 @@ const ProjectsPage = () => {
     </StyledProjectsPageContainer>
   );
 };
+
+const StyledLineContainer = styled(motion.div)`
+  position: relative;
+  margin: 0.5rem 0;
+`;
+
+const StyledLine = styled(motion.div)`
+  position: absolute;
+  background: #ff3f00;
+  bottom: 15%;
+  z-index: -1;
+  height: 25%;
+  width: 25%;
+`;
 
 const StyledProjectsPageContainer = styled(motion.div)`
   min-height: 100vh;

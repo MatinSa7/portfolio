@@ -49,6 +49,19 @@ export const lineAnimation4 = {
   },
 };
 
+export const lineAnimation5 = {
+  hidden: {
+    width: 0,
+  },
+  show: {
+    width: "26%",
+    transition: {
+      duration: 1.5,
+      ease: "easeOut",
+    },
+  },
+};
+
 export const pageAnimation = {
   hidden: {
     opacity: 0,
