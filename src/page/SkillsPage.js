@@ -3,6 +3,7 @@ import styled, { keyframes } from "styled-components";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
 import { lineAnimation4 } from "../animation";
+import SkillDetail from "../components/SkillDetail";
 
 import { useScroll } from "../components/useScroll";
 import { scrollReveal } from "../animation";
@@ -10,32 +11,33 @@ import { scrollReveal } from "../animation";
 const SkillsPage = () => {
   const [element, controls] = useScroll();
   const [hoverStatus, setHoverStatus] = useState(0);
+  const [clickStatus, setClickStatus] = useState(false);
   return (
     <StyledSkillsContainer
       variants={scrollReveal}
       ref={element}
       animate={controls}
       initial="hidden"
+      onClick={() => setClickStatus(!clickStatus)}
     >
-      <a href="/Skills">
-        <StyledSkill0></StyledSkill0>
-        <StyledSkill1></StyledSkill1>
-        <StyledSkill2>
-          <StyledLineContainer>
-            <h1>Skills.</h1>
-            <StyledLine
-              initial="hidden"
-              animate={controls}
-              ref={element}
-              variants={lineAnimation4}
-            ></StyledLine>
-          </StyledLineContainer>
-          <p>(Click for Details)</p>
-        </StyledSkill2>
-        <StyledSkill3></StyledSkill3>
-        <StyledSkill4></StyledSkill4>
-        <StyledSkill5></StyledSkill5>
-      </a>
+      {clickStatus === true && <SkillDetail />}
+      <StyledSkill0></StyledSkill0>
+      <StyledSkill1></StyledSkill1>
+      <StyledSkill2>
+        <StyledLineContainer>
+          <h1>Skills.</h1>
+          <StyledLine
+            initial="hidden"
+            animate={controls}
+            ref={element}
+            variants={lineAnimation4}
+          ></StyledLine>
+        </StyledLineContainer>
+        <p>(Click for Details)</p>
+      </StyledSkill2>
+      <StyledSkill3></StyledSkill3>
+      <StyledSkill4></StyledSkill4>
+      <StyledSkill5></StyledSkill5>
     </StyledSkillsContainer>
   );
 };

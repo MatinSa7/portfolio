@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <GlobalStyle />
       <Switch location={location} key={location.pathname}>
-        <Route path="/portfolio/" exact>
+        <Route path="/portfolio" exact>
           <IntroPage />
           <ScrollText />
           <SkillsPage />
@@ -39,7 +39,7 @@ function App() {
         <Route path="/Bot" exact>
           <ExamPage />
         </Route>
-        <Route path="/Skills" exact>
+        <Route path="Skills" exact>
           <DetailedSkillsPage />
         </Route>
       </Switch>

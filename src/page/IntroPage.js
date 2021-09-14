@@ -24,9 +24,9 @@ const IntroPage = () => {
       </StyledLogoArea>
       <StyledDescription>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error saepe
-          aliquid amet provident eius vel aut? Reprehenderit, excepturi
-          assumenda. Delectus.
+          Hi, My name is Matin and I like to code! <br /> I find deep
+          satisfaction in learning things I feel will benefit me, and love to
+          explore new technologies I can implement in projects.
         </p>
         <StyledList>
           <StyledHide>
