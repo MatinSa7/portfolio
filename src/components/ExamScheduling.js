@@ -3,8 +3,9 @@ import styled, { keyframes } from "styled-components";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
 
-const SkillDetail = () => {
+const ExamScheduling = () => {
   const { pathname } = useLocation();
+
   return (
     <StyledCardShadow>
       <Detail>bob</Detail>
@@ -37,4 +38,4 @@ const Detail = styled(motion.div)`
   }
 `;
 
-export default SkillDetail;
+export default ExamScheduling;

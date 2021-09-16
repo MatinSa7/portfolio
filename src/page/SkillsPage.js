@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled, { keyframes } from "styled-components";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
@@ -12,13 +12,22 @@ const SkillsPage = () => {
   const [element, controls] = useScroll();
   const [hoverStatus, setHoverStatus] = useState(0);
   const [clickStatus, setClickStatus] = useState(false);
+  const [offset, setOffset] = useState(0);
+
+  useEffect(() => {
+    window.onscroll = () => {
+      setOffset(window.pageYOffset);
+      setClickStatus(0);
+    };
+  }, []);
+
   return (
     <StyledSkillsContainer
       variants={scrollReveal}
       ref={element}
       animate={controls}
       initial="hidden"
-      onClick={() => setClickStatus(!clickStatus)}
+      onClick={() => setClickStatus(true)}
     >
       {clickStatus === true && <SkillDetail />}
       <StyledSkill0></StyledSkill0>
