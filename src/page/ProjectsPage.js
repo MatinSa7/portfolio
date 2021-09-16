@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled, { keyframes } from "styled-components";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
@@ -10,50 +10,63 @@ import clnxdefault from "../image/clnxdefault.png";
 import { useScroll } from "../components/useScroll";
 import { scrollReveal } from "../animation";
 import { lineAnimation5 } from "../animation";
+import ExamScheduling from "../components/ExamScheduling";
 
 const ProjectsPage = () => {
   const [element, controls] = useScroll();
+  const [clickStatus, setClickStatus] = useState(0);
+  const [offset, setOffset] = useState(0);
+
+  useEffect(() => {
+    window.onscroll = () => {
+      setOffset(window.pageYOffset);
+      setClickStatus(0);
+    };
+  }, []);
+
   return (
     <StyledProjectsPageContainer
       variants={scrollReveal}
       ref={element}
       animate={controls}
       initial="hidden"
+      onScroll={() => setClickStatus(0)}
     >
       <h1>Projects:</h1>
-      <StyledCardContainer>
-        <motion.a
+      <StyledCardContainer onClick={() => setClickStatus(1)}>
+        {clickStatus === 1 && <ExamScheduling />}
+        <motion.p
           href="/Exam"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
           Exam Invigilation Scheduling
-        </motion.a>
+        </motion.p>
       </StyledCardContainer>
       <StyledCardContainer>
-        <motion.a whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="">
+        <motion.p whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="">
           Stable Matching Solver
-        </motion.a>
+        </motion.p>
       </StyledCardContainer>
       <StyledCardContainer>
-        <motion.a whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="">
+        <motion.p whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="">
           CLNx Career Portal
-        </motion.a>
+        </motion.p>
       </StyledCardContainer>
       <StyledCardContainer>
-        <motion.a whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="">
+        <motion.p whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="">
           Pulsate
-        </motion.a>
+        </motion.p>
       </StyledCardContainer>
       <StyledCardContainer>
-        <motion.a whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="">
+        <motion.p whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="">
           Mattify
-        </motion.a>
+        </motion.p>
       </StyledCardContainer>
       <StyledCardContainer>
-        <motion.a whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="">
+        <motion.p whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="">
           Gym Booking Automation
-        </motion.a>
+        </motion.p>
       </StyledCardContainer>
     </StyledProjectsPageContainer>
   );
@@ -92,6 +105,11 @@ const StyledCardContainer = styled(motion.div)`
   a {
     color: black;
     font-size: calc(1.5vw + 1rem);
+  }
+  p {
+    color: black;
+    font-size: calc(1.5vw + 1rem);
+    text-decoration: underline;
   }
 `;
 
