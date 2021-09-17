@@ -11,6 +11,11 @@ import { useScroll } from "../components/useScroll";
 import { scrollReveal } from "../animation";
 import { lineAnimation5 } from "../animation";
 import ExamScheduling from "../components/ExamScheduling";
+import StableMatching from "../components/StableMatching";
+import CLNx from "../components/CLNx";
+import Pulsate from "../components/Pulsate";
+import Mattify from "../components/Mattify";
+import Gym from "../components/Gym";
 
 const ProjectsPage = () => {
   const [element, controls] = useScroll();
@@ -43,27 +48,32 @@ const ProjectsPage = () => {
           Exam Invigilation Scheduling
         </motion.p>
       </StyledCardContainer>
-      <StyledCardContainer>
+      <StyledCardContainer onClick={() => setClickStatus(2)}>
+        {clickStatus === 2 && <StableMatching />}
         <motion.p whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="">
           Stable Matching Solver
         </motion.p>
       </StyledCardContainer>
-      <StyledCardContainer>
+      <StyledCardContainer onClick={() => setClickStatus(3)}>
+        {clickStatus === 3 && <CLNx />}
         <motion.p whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="">
           CLNx Career Portal
         </motion.p>
       </StyledCardContainer>
-      <StyledCardContainer>
+      <StyledCardContainer onClick={() => setClickStatus(4)}>
+        {clickStatus === 4 && <Pulsate />}
         <motion.p whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="">
           Pulsate
         </motion.p>
       </StyledCardContainer>
-      <StyledCardContainer>
+      <StyledCardContainer onClick={() => setClickStatus(5)}>
+        {clickStatus === 5 && <Mattify />}
         <motion.p whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="">
           Mattify
         </motion.p>
       </StyledCardContainer>
-      <StyledCardContainer>
+      <StyledCardContainer onClick={() => setClickStatus(6)}>
+        {clickStatus === 6 && <Gym />}
         <motion.p whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="">
           Gym Booking Automation
         </motion.p>
