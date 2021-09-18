@@ -8,7 +8,15 @@ const CLNx = () => {
 
   return (
     <StyledCardShadow>
-      <Detail>bob</Detail>
+      <Detail>
+        Worked as a team of two to re-design a quick search feature on the U of
+        T career portal (CLNx). We first did various collection methods and
+        constructed Hierarchal Task Analysis diagrams to understand current
+        implementation of feature. We then created low fidelity prototypes and
+        performed heuristic evaluations to choose optimal design. After choosing
+        prototype, we performed usability testing and graphically analyzed
+        results.
+      </Detail>
     </StyledCardShadow>
   );
 };

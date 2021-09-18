@@ -8,7 +8,17 @@ const ExamScheduling = () => {
 
   return (
     <StyledCardShadow>
-      <Detail>bob</Detail>
+      <Detail>
+        In this project, I worked in a group of four to work with client Khoan
+        Doan of the U of T registrar office to create flow and basic simulation
+        for exam invigilation scheduling. We used a basic regret system where
+        exam invigilators could rank their order of preference of certain
+        shifts, and by creating a score out of 3 the shift was given depending
+        on their relative ranking. <br />
+        <br />
+        Technical tools used: Python <br />
+        Other skills: design iterations after meeting with client, flow diagram
+      </Detail>
     </StyledCardShadow>
   );
 };

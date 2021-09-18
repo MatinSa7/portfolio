@@ -11,15 +11,8 @@ import { scrollReveal } from "../animation";
 const SkillsPage = () => {
   const [element, controls] = useScroll();
   const [hoverStatus, setHoverStatus] = useState(0);
-  const [clickStatusSkill, setClickStatusSkill] = useState(0);
+  const [clickStatusSkill, setClickStatusSkill] = useState(false);
   const [offset, setOffset] = useState(0);
-
-  useEffect(() => {
-    window.onscroll = () => {
-      setOffset(window.pageYOffset);
-      setClickStatusSkill(0);
-    };
-  }, []);
 
   return (
     <StyledSkillsContainer
@@ -27,9 +20,9 @@ const SkillsPage = () => {
       ref={element}
       animate={controls}
       initial="hidden"
-      onClick={() => setClickStatusSkill(1)}
+      onClick={() => setClickStatusSkill(!clickStatusSkill)}
     >
-      {clickStatusSkill === 1 && <SkillDetail />}
+      {clickStatusSkill === true && <SkillDetail />}
       <StyledSkill0></StyledSkill0>
       <StyledSkill1></StyledSkill1>
       <StyledSkill2>
