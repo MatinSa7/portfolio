@@ -26,6 +26,7 @@ const ProjectsPage = () => {
     window.onscroll = () => {
       setOffset(window.pageYOffset);
       setClickStatus(0);
+      console.log(clickStatus);
     };
   }, []);
 
