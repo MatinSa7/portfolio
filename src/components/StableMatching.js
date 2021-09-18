@@ -8,7 +8,18 @@ const StableMatching = () => {
 
   return (
     <StyledCardShadow>
-      <Detail>bob</Detail>
+      <Detail>
+        In this project, I implemented the Gale Shapley algorithm to determine
+        optimal matching between students and universities. To do so, data was
+        read from large csv files where student and school objects were created
+        to hold information as well as preferences going both ways. With these,
+        a smp (stable matching problem) solver object was instantiated to find
+        the optimal matching and minimize regret using the Gale Shapley
+        algorithm. <br />
+        <br />
+        Technical tools used: Java, Excel <br /> Other skills: data structures
+        and algorithms
+      </Detail>
     </StyledCardShadow>
   );
 };

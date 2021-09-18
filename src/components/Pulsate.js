@@ -8,7 +8,13 @@ const Pulsate = () => {
 
   return (
     <StyledCardShadow>
-      <Detail>bob</Detail>
+      <Detail>
+        Pulsate is a basic productivity website where you can journal, use a
+        pomodoro timer to work, as well as listen to brief headspace mediations
+        audio. <br />
+        <br /> Technical skills used: Figma, HTML/CSS/Javascript (React - styled
+        components, Hash router, framer-motion, basic svg animations)
+      </Detail>
     </StyledCardShadow>
   );
 };

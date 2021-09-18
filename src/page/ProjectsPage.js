@@ -26,7 +26,6 @@ const ProjectsPage = () => {
     window.onscroll = () => {
       setOffset(window.pageYOffset);
       setClickStatus(0);
-      console.log(clickStatus);
     };
   }, []);
 
@@ -36,7 +35,7 @@ const ProjectsPage = () => {
       ref={element}
       animate={controls}
       initial="hidden"
-      onScroll={() => setClickStatus(0)}
+
     >
       <h1>Projects:</h1>
       <StyledCardContainer onClick={() => setClickStatus(1)}>
