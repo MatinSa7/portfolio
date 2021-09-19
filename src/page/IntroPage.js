@@ -20,7 +20,7 @@ const IntroPage = () => {
       variants={pageAnimation}
     >
       <StyledLogoArea>
-        <h1>Matin</h1>
+        <h1>MS</h1>
       </StyledLogoArea>
       <StyledDescription>
         <p>
@@ -51,7 +51,11 @@ const IntroPage = () => {
               onMouseLeave={() => setHoverStatus(hoverStatus)}
               variants={descriptionAnimation}
             >
-              <a href="">Skills</a>
+              <small
+                onClick={() => window.scrollBy(0, 0.9 * window.innerHeight)}
+              >
+                Skills
+              </small>
               {hoverStatus === 2 && (
                 <StyledLine2
                   initial="hidden"
@@ -67,7 +71,11 @@ const IntroPage = () => {
               onMouseLeave={() => setHoverStatus(hoverStatus)}
               variants={descriptionAnimation}
             >
-              <a href="">Projects</a>
+              <small
+                onClick={() => window.scrollBy(0, 1.8 * window.innerHeight)}
+              >
+                Projects
+              </small>
               {hoverStatus === 3 && (
                 <StyledLine3
                   initial="hidden"
@@ -99,7 +107,8 @@ const StyledList = styled(motion.ul)`
   flex: 1 1 6rem;
   flex-direction: column;
   padding-left: 5rem;
-  a {
+  a,
+  small {
     padding-left: 0.2rem;
     font-weight: 500;
     font-size: calc(0.8vw + 1rem);

@@ -14,6 +14,10 @@ const Pulsate = () => {
         audio. <br />
         <br /> Technical skills used: Figma, HTML/CSS/Javascript (React - styled
         components, Hash router, framer-motion, basic svg animations)
+        <br />
+        <br />
+        Webapp link: https://matinsa7.github.io/pulsate/ <br />
+        Github: https://github.com/MatinSa7/music_player
       </Detail>
     </StyledCardShadow>
   );

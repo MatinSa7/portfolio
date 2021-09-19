@@ -10,7 +10,7 @@ const ScrollText = () => {
         initial={{ width: "0%", opacity: 0 }}
         animate={{ width: "100%", opacity: 1 }}
       ></StyledTextLine>
-      <StyledScrollingText>↓↓ Check out my work ↓↓</StyledScrollingText>
+      <StyledScrollingText>↓ Check out my work ↓</StyledScrollingText>
       <StyledTextLine
         transition={{ duration: 3 }}
         initial={{ width: "0%", opacity: 0 }}

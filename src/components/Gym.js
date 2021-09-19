@@ -8,7 +8,17 @@ const Gym = () => {
 
   return (
     <StyledCardShadow>
-      <Detail>bob</Detail>
+      <Detail>
+        Picture this, you're at the weird time where covid cases are high, but
+        non essential places like the gym are still open, but at a 10 person
+        capacity where prior booking is mandatory to get in. Everyone's fighting
+        for time slots as the initial lucky ten cancel last minute. I really
+        want to go to the gym, but I hate wasting time to book, and I notice
+        they have no captcha system. What do I do? I go home and create a bot to
+        book for me everyday. All the slots I need are mine. <br />
+        <br />
+        Technical skills used: Python (Selenium)
+      </Detail>
     </StyledCardShadow>
   );
 };
