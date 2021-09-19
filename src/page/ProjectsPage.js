@@ -16,6 +16,7 @@ import CLNx from "../components/CLNx";
 import Pulsate from "../components/Pulsate";
 import Mattify from "../components/Mattify";
 import Gym from "../components/Gym";
+import Website from "../components/Website";
 
 const ProjectsPage = () => {
   const [element, controls] = useScroll();
@@ -35,9 +36,20 @@ const ProjectsPage = () => {
       ref={element}
       animate={controls}
       initial="hidden"
-
     >
       <h1>Projects:</h1>
+      <StyledCardContainer onClick={() => setClickStatus(2)}>
+        {clickStatus === 2 && <StableMatching />}
+        <motion.p whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="">
+          Stable Matching Solver
+        </motion.p>
+      </StyledCardContainer>
+      <StyledCardContainer onClick={() => setClickStatus(4)}>
+        {clickStatus === 4 && <Pulsate />}
+        <motion.p whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="">
+          Pulsate
+        </motion.p>
+      </StyledCardContainer>
       <StyledCardContainer onClick={() => setClickStatus(1)}>
         {clickStatus === 1 && <ExamScheduling />}
         <motion.p
@@ -48,24 +60,13 @@ const ProjectsPage = () => {
           Exam Invigilation Scheduling
         </motion.p>
       </StyledCardContainer>
-      <StyledCardContainer onClick={() => setClickStatus(2)}>
-        {clickStatus === 2 && <StableMatching />}
-        <motion.p whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="">
-          Stable Matching Solver
-        </motion.p>
-      </StyledCardContainer>
       <StyledCardContainer onClick={() => setClickStatus(3)}>
         {clickStatus === 3 && <CLNx />}
         <motion.p whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="">
           CLNx Career Portal
         </motion.p>
       </StyledCardContainer>
-      <StyledCardContainer onClick={() => setClickStatus(4)}>
-        {clickStatus === 4 && <Pulsate />}
-        <motion.p whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="">
-          Pulsate
-        </motion.p>
-      </StyledCardContainer>
+
       <StyledCardContainer onClick={() => setClickStatus(5)}>
         {clickStatus === 5 && <Mattify />}
         <motion.p whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="">
@@ -78,6 +79,13 @@ const ProjectsPage = () => {
           Gym Booking Automation
         </motion.p>
       </StyledCardContainer>
+      <StyledCardContainer onClick={() => setClickStatus(7)}>
+        {clickStatus === 7 && <Website />}
+        <motion.p whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="">
+          This site
+        </motion.p>
+      </StyledCardContainer>
+      <StyledCardContainer></StyledCardContainer>
     </StyledProjectsPageContainer>
   );
 };
@@ -110,7 +118,7 @@ const StyledProjectsPageContainer = styled(motion.div)`
 const StyledCardContainer = styled(motion.div)`
   display: flex;
   align-items: center;
-  margin-top: 5vh;
+  margin-top: 3vh;
   min-height: 20vh;
   a {
     color: black;

@@ -3,19 +3,20 @@ import styled, { keyframes } from "styled-components";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
 
-const Mattify = () => {
+const Website = () => {
   const { pathname } = useLocation();
 
   return (
     <StyledCardShadow>
       <Detail>
-        Mattify was a music player app that I created during an online course I
-        was taking for react by Dev Ed. This course taught me a lot about
-        thinking in terms of components, and how logic fits into html and css.{" "}
+        I created this website from scratch (no templates) using all the front
+        end skills I've self learned! <br />
         <br />
-        <br /> Technical skills used: HTML/Sass/Javascript (React) <br />
-        <br /> Webapp link: https://matinsa7.github.io/music_player/ <br />
-        Github: https://github.com/MatinSa7/music_player
+        Technical skills used: HTML/CSS/Javascript (React-styled components,
+        framer motion)
+        <br />
+        <br />
+        Github: https://github.com/MatinSa7/portfolio
       </Detail>
     </StyledCardShadow>
   );
@@ -46,4 +47,4 @@ const Detail = styled(motion.div)`
   }
 `;
 
-export default Mattify;
+export default Website;
