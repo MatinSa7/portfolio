@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <GlobalStyle />
       <Switch location={location} key={location.pathname}>
-        <Route path="/portfolio" exact>
+        <Route>
           <IntroPage />
           <ScrollText />
           <SkillsPage />
