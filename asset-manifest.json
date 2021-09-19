@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.js": "/matinsa7.github.io/portfolio/static/js/main.acdbe6b3.chunk.js",
-    "main.js.map": "/matinsa7.github.io/portfolio/static/js/main.acdbe6b3.chunk.js.map",
-    "runtime-main.js": "/matinsa7.github.io/portfolio/static/js/runtime-main.80f8db78.js",
-    "runtime-main.js.map": "/matinsa7.github.io/portfolio/static/js/runtime-main.80f8db78.js.map",
-    "static/js/2.07ece091.chunk.js": "/matinsa7.github.io/portfolio/static/js/2.07ece091.chunk.js",
-    "static/js/2.07ece091.chunk.js.map": "/matinsa7.github.io/portfolio/static/js/2.07ece091.chunk.js.map",
-    "static/js/3.7f1ee843.chunk.js": "/matinsa7.github.io/portfolio/static/js/3.7f1ee843.chunk.js",
-    "static/js/3.7f1ee843.chunk.js.map": "/matinsa7.github.io/portfolio/static/js/3.7f1ee843.chunk.js.map",
-    "index.html": "/matinsa7.github.io/portfolio/index.html",
-    "static/js/2.07ece091.chunk.js.LICENSE.txt": "/matinsa7.github.io/portfolio/static/js/2.07ece091.chunk.js.LICENSE.txt",
-    "static/media/clnxdefault.e7f37631.png": "/matinsa7.github.io/portfolio/static/media/clnxdefault.e7f37631.png",
-    "static/media/invig.36d13106.png": "/matinsa7.github.io/portfolio/static/media/invig.36d13106.png",
-    "static/media/lowfidproto.6f610b43.png": "/matinsa7.github.io/portfolio/static/media/lowfidproto.6f610b43.png",
-    "static/media/schedule photo.8b5bc876.png": "/matinsa7.github.io/portfolio/static/media/schedule photo.8b5bc876.png"
+    "main.js": "/static/js/main.acdbe6b3.chunk.js",
+    "main.js.map": "/static/js/main.acdbe6b3.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.57be5164.js",
+    "runtime-main.js.map": "/static/js/runtime-main.57be5164.js.map",
+    "static/js/2.40c821ed.chunk.js": "/static/js/2.40c821ed.chunk.js",
+    "static/js/2.40c821ed.chunk.js.map": "/static/js/2.40c821ed.chunk.js.map",
+    "static/js/3.7f1ee843.chunk.js": "/static/js/3.7f1ee843.chunk.js",
+    "static/js/3.7f1ee843.chunk.js.map": "/static/js/3.7f1ee843.chunk.js.map",
+    "index.html": "/index.html",
+    "static/js/2.40c821ed.chunk.js.LICENSE.txt": "/static/js/2.40c821ed.chunk.js.LICENSE.txt",
+    "static/media/clnxdefault.e7f37631.png": "/static/media/clnxdefault.e7f37631.png",
+    "static/media/invig.36d13106.png": "/static/media/invig.36d13106.png",
+    "static/media/lowfidproto.6f610b43.png": "/static/media/lowfidproto.6f610b43.png",
+    "static/media/schedule photo.8b5bc876.png": "/static/media/schedule photo.8b5bc876.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.80f8db78.js",
-    "static/js/2.07ece091.chunk.js",
+    "static/js/runtime-main.57be5164.js",
+    "static/js/2.40c821ed.chunk.js",
     "static/js/main.acdbe6b3.chunk.js"
   ]
 }
