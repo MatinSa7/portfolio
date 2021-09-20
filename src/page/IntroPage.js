@@ -25,7 +25,7 @@ const IntroPage = () => {
       <StyledDescription>
         <p>
           Hi, My name is Matin and I like to code! <br /> I find deep
-          satisfaction in learning things I feel will benefit me, and love to
+          satisfaction in learning things I feel will benefit me and love to
           explore new technologies I can implement in projects.
         </p>
         <StyledList>

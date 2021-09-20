@@ -20,15 +20,21 @@ import Website from "../components/Website";
 
 const ProjectsPage = () => {
   const [element, controls] = useScroll();
-  const [clickStatus, setClickStatus] = useState(0);
+  const [clickStatus1, setClickStatus1] = useState(false);
+  const [clickStatus2, setClickStatus2] = useState(false);
+  const [clickStatus3, setClickStatus3] = useState(false);
+  const [clickStatus4, setClickStatus4] = useState(false);
+  const [clickStatus5, setClickStatus5] = useState(false);
+  const [clickStatus6, setClickStatus6] = useState(false);
+  const [clickStatus7, setClickStatus7] = useState(false);
   const [offset, setOffset] = useState(0);
 
-  useEffect(() => {
+  /*useEffect(() => {
     window.onscroll = () => {
       setOffset(window.pageYOffset);
       setClickStatus(0);
     };
-  }, []);
+  }, []); */
 
   return (
     <StyledProjectsPageContainer
@@ -38,20 +44,20 @@ const ProjectsPage = () => {
       initial="hidden"
     >
       <h1>Projects:</h1>
-      <StyledCardContainer onClick={() => setClickStatus(2)}>
-        {clickStatus === 2 && <StableMatching />}
+      <StyledCardContainer onClick={() => setClickStatus1(!clickStatus1)}>
+        {clickStatus1 === true && <StableMatching />}
         <motion.p whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="">
           Stable Matching Solver
         </motion.p>
       </StyledCardContainer>
-      <StyledCardContainer onClick={() => setClickStatus(4)}>
-        {clickStatus === 4 && <Pulsate />}
+      <StyledCardContainer onClick={() => setClickStatus2(!clickStatus2)}>
+        {clickStatus2 === true && <Pulsate />}
         <motion.p whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="">
           Pulsate
         </motion.p>
       </StyledCardContainer>
-      <StyledCardContainer onClick={() => setClickStatus(1)}>
-        {clickStatus === 1 && <ExamScheduling />}
+      <StyledCardContainer onClick={() => setClickStatus3(!clickStatus3)}>
+        {clickStatus3 === true && <ExamScheduling />}
         <motion.p
           href="/Exam"
           whileHover={{ scale: 1.1 }}
@@ -60,32 +66,31 @@ const ProjectsPage = () => {
           Exam Invigilation Scheduling
         </motion.p>
       </StyledCardContainer>
-      <StyledCardContainer onClick={() => setClickStatus(3)}>
-        {clickStatus === 3 && <CLNx />}
+      <StyledCardContainer onClick={() => setClickStatus4(!clickStatus4)}>
+        {clickStatus4 === true && <CLNx />}
         <motion.p whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="">
           CLNx Career Portal
         </motion.p>
       </StyledCardContainer>
 
-      <StyledCardContainer onClick={() => setClickStatus(5)}>
-        {clickStatus === 5 && <Mattify />}
+      <StyledCardContainer onClick={() => setClickStatus5(!clickStatus5)}>
+        {clickStatus5 === true && <Mattify />}
         <motion.p whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="">
           Mattify
         </motion.p>
       </StyledCardContainer>
-      <StyledCardContainer onClick={() => setClickStatus(6)}>
-        {clickStatus === 6 && <Gym />}
+      <StyledCardContainer onClick={() => setClickStatus6(!clickStatus6)}>
+        {clickStatus6 === true && <Gym />}
         <motion.p whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="">
           Gym Booking Automation
         </motion.p>
       </StyledCardContainer>
-      <StyledCardContainer onClick={() => setClickStatus(7)}>
-        {clickStatus === 7 && <Website />}
+      <StyledCardContainer onClick={() => setClickStatus7(!clickStatus7)}>
+        {clickStatus7 === true && <Website />}
         <motion.p whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="">
           This site
         </motion.p>
       </StyledCardContainer>
-      <StyledCardContainer></StyledCardContainer>
     </StyledProjectsPageContainer>
   );
 };
@@ -118,7 +123,7 @@ const StyledProjectsPageContainer = styled(motion.div)`
 const StyledCardContainer = styled(motion.div)`
   display: flex;
   align-items: center;
-  margin-top: 3vh;
+  margin-top: 2vh;
   min-height: 20vh;
   a {
     color: black;
