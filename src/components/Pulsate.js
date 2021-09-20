@@ -16,8 +16,15 @@ const Pulsate = () => {
         components, Hash router, framer-motion, basic svg animations)
         <br />
         <br />
-        Webapp link: https://matinsa7.github.io/pulsate/ <br />
-        Github: https://github.com/MatinSa7/music_player
+        Webapp link:{" "}
+        <a target="_blank" href="https://matinsa7.github.io/pulsate/">
+          https://matinsa7.github.io/pulsate/{" "}
+        </a>{" "}
+        <br />
+        Github:{" "}
+        <a target="_blank" href="https://github.com/MatinSa7/music_player">
+          https://github.com/MatinSa7/music_player
+        </a>
       </Detail>
     </StyledCardShadow>
   );
@@ -43,6 +50,9 @@ const Detail = styled(motion.div)`
   left: 10%;
   color: black;
   z-index: 100;
+  a {
+    font-size: 1rem;
+  }
   img {
     width: 100%;
   }
