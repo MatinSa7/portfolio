@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
+import { pageAnimationCard } from "../animation";
 
 const Mattify = () => {
   const { pathname } = useLocation();
 
   return (
     <StyledCardShadow>
-      <Detail>
+      <Detail initial="hidden" animate="show" variants={pageAnimationCard}>
         Mattify was a music player app that I created during an online course I
         was taking for react by Dev Ed. This course taught me a lot about
         thinking in terms of components, and how logic fits into html and css.{" "}
@@ -41,7 +42,7 @@ const StyledCardShadow = styled(motion.div)`
 
 const Detail = styled(motion.div)`
   width: 80%;
-  border-radius: 1rem;
+  border-radius: 3rem;
   padding: 2rem 5rem;
   background: white;
   position: absolute;
@@ -50,6 +51,7 @@ const Detail = styled(motion.div)`
   z-index: 100;
   a {
     font-size: 1rem;
+    color: black;
   }
   img {
     width: 100%;
