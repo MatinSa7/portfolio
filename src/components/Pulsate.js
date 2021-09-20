@@ -23,8 +23,8 @@ const Pulsate = () => {
         </a>{" "}
         <br />
         Github:{" "}
-        <a target="_blank" href="https://github.com/MatinSa7/music_player">
-          https://github.com/MatinSa7/music_player
+        <a target="_blank" href="https://github.com/MatinSa7/pulsate">
+          https://github.com/MatinSa7/pulsate
         </a>
       </Detail>
     </StyledCardShadow>
