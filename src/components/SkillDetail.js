@@ -8,9 +8,9 @@ const SkillDetail = () => {
   return (
     <StyledCardShadow>
       <Detail>
-        Technical Tools: Java, Python (Selenium, Pandas, Data visualization),
-        MySQL, HTML, CSS, Javascript (React, StyledComponents, Sass,
-        framer-motion) <br /> <br />
+        Technical Tools: Java (JDBC, Gurobi), Python (Selenium, Pandas, Data
+        visualization), MySQL, HTML, CSS, Javascript (React, StyledComponents,
+        Sass, framer-motion) <br /> <br />
         Creative Tools: Figma, Adobe Illustrator/Photoshop <br /> <br />
         Knowledge: Data structures and algorithms, basic descriptive and
         inferential statistics, deterministic/stochastic operations research

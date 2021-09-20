@@ -14,7 +14,11 @@ const Mattify = () => {
         thinking in terms of components, and how logic fits into html and css.{" "}
         <br />
         <br /> Technical skills used: HTML/Sass/Javascript (React) <br />
-        <br /> Webapp link: https://matinsa7.github.io/music_player/ <br />
+        <br /> Webapp link:
+        <a href="https://matinsa7.github.io/music_player/">
+          https://matinsa7.github.io/music_player/
+        </a>
+        <br />
         Github: https://github.com/MatinSa7/music_player
       </Detail>
     </StyledCardShadow>
