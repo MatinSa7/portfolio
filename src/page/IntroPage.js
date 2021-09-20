@@ -21,7 +21,25 @@ const IntroPage = () => {
     >
       <StyledLogoArea>
         <h1>MS</h1>
+        <motion.a
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          target="_blank"
+          href="https://github.com/matinsa7"
+        >
+          Github
+        </motion.a>{" "}
+        <br />
+        <motion.a
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          target="_blank"
+          href="https://www.linkedin.com/in/matin-sarahi-882a1218a/"
+        >
+          Linkedin
+        </motion.a>
       </StyledLogoArea>
+      <StyledIconContainer></StyledIconContainer>
       <StyledDescription>
         <p>
           Hi, My name is Matin and I like to code! <br /> I find deep
@@ -91,6 +109,10 @@ const IntroPage = () => {
   );
 };
 
+const StyledIconContainer = styled(motion.div)`
+  display: flex;
+`;
+
 const StyledHide = styled.div`
   overflow: hidden;
 `;
@@ -132,6 +154,12 @@ const StyledDescription = styled(motion.div)`
 `;
 
 const StyledLogoArea = styled(motion.div)`
+  a {
+    text-decoration: none;
+    color: black;
+    margin-top: 3vh;
+    margin-left: 3vw;
+  }
   h1 {
     font-size: calc(3vw + 1rem);
   }
