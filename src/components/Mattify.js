@@ -14,12 +14,15 @@ const Mattify = () => {
         thinking in terms of components, and how logic fits into html and css.{" "}
         <br />
         <br /> Technical skills used: HTML/Sass/Javascript (React) <br />
-        <br /> Webapp link:
-        <a href="https://matinsa7.github.io/music_player/">
+        <br /> Webapp link:{" "}
+        <a target="_blank" href="https://matinsa7.github.io/music_player/">
           https://matinsa7.github.io/music_player/
         </a>
         <br />
-        Github: https://github.com/MatinSa7/music_player
+        Github:{" "}
+        <a target="_blank" href="https://github.com/MatinSa7/music_player">
+          https://github.com/MatinSa7/music_player
+        </a>
       </Detail>
     </StyledCardShadow>
   );
@@ -45,6 +48,9 @@ const Detail = styled(motion.div)`
   left: 10%;
   color: black;
   z-index: 100;
+  a {
+    font-size: 1rem;
+  }
   img {
     width: 100%;
   }
