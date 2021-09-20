@@ -125,10 +125,6 @@ const StyledCardContainer = styled(motion.div)`
   align-items: center;
   margin-top: 2vh;
   min-height: 20vh;
-  a {
-    color: black;
-    font-size: calc(1.5vw + 1rem);
-  }
   p {
     color: black;
     font-size: calc(1.5vw + 1rem);

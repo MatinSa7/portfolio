@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
+import { pageAnimationCard } from "../animation";
 
 const Pulsate = () => {
   const { pathname } = useLocation();
 
   return (
     <StyledCardShadow>
-      <Detail>
+      <Detail initial="hidden" animate="show" variants={pageAnimationCard}>
         Pulsate is a basic productivity website where you can journal, use a
         pomodoro timer to work, as well as listen to brief headspace mediations
         audio. <br />
@@ -43,7 +44,7 @@ const StyledCardShadow = styled(motion.div)`
 
 const Detail = styled(motion.div)`
   width: 80%;
-  border-radius: 1rem;
+  border-radius: 3rem;
   padding: 2rem 5rem;
   background: white;
   position: absolute;
@@ -52,6 +53,7 @@ const Detail = styled(motion.div)`
   z-index: 100;
   a {
     font-size: 1rem;
+    color: black;
   }
   img {
     width: 100%;

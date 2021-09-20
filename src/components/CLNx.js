@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
+import { pageAnimationCard } from "../animation";
 
 const CLNx = () => {
   const { pathname } = useLocation();
 
   return (
     <StyledCardShadow>
-      <Detail>
+      <Detail initial="hidden" animate="show" variants={pageAnimationCard}>
         Worked as a team of two to re-design a quick search feature on the U of
         T career portal (CLNx). We first did various collection methods and
         constructed Hierarchal Task Analysis diagrams to understand current
@@ -34,7 +35,7 @@ const StyledCardShadow = styled(motion.div)`
 
 const Detail = styled(motion.div)`
   width: 80%;
-  border-radius: 1rem;
+  border-radius: 3rem;
   padding: 2rem 5rem;
   background: white;
   position: absolute;

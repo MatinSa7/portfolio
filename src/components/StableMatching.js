@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
+import { pageAnimationCard } from "../animation";
 
 const StableMatching = () => {
   const { pathname } = useLocation();
 
   return (
     <StyledCardShadow>
-      <Detail>
+      <Detail initial="hidden" animate="show" variants={pageAnimationCard}>
         In this project, I implemented the Gale Shapley algorithm to determine
         optimal matching between students and universities. To do so, data was
         read from large csv files where student and school objects were created
@@ -37,7 +38,7 @@ const StyledCardShadow = styled(motion.div)`
 
 const Detail = styled(motion.div)`
   width: 80%;
-  border-radius: 1rem;
+  border-radius: 3rem;
   padding: 2rem 5rem;
   background: white;
   position: absolute;

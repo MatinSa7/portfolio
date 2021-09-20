@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
+import { pageAnimationCard } from "../animation";
 
 const ExamScheduling = () => {
   const { pathname } = useLocation();
 
   return (
     <StyledCardShadow>
-      <Detail>
+      <Detail initial="hidden" animate="show" variants={pageAnimationCard}>
         In this project, I worked in a group of four to work with client Khoan
         Doan of the U of T registrar office to create flow and basic simulation
         for exam invigilation scheduling. We used a basic regret system where
@@ -36,7 +37,7 @@ const StyledCardShadow = styled(motion.div)`
 
 const Detail = styled(motion.div)`
   width: 80%;
-  border-radius: 1rem;
+  border-radius: 3rem;
   padding: 2rem 5rem;
   background: white;
   position: absolute;

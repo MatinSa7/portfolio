@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
+import { pageAnimationCard } from "../animation";
 
 const Website = () => {
   const { pathname } = useLocation();
 
   return (
     <StyledCardShadow>
-      <Detail>
+      <Detail initial="hidden" animate="show" variants={pageAnimationCard}>
         I created this website from scratch (no templates) using all the front
         end skills I've self learned! <br />
         <br />
@@ -16,7 +17,10 @@ const Website = () => {
         framer motion)
         <br />
         <br />
-        Github: https://github.com/MatinSa7/portfolio
+        Github:{" "}
+        <a target="_blank" href="https://github.com/MatinSa7/portfolio">
+          https://github.com/MatinSa7/portfolio
+        </a>
       </Detail>
     </StyledCardShadow>
   );
@@ -42,6 +46,10 @@ const Detail = styled(motion.div)`
   left: 10%;
   color: black;
   z-index: 100;
+  a {
+    font-size: 1rem;
+    color: black;
+  }
   img {
     width: 100%;
   }
