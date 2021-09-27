@@ -69,12 +69,12 @@ export const StyledSkillsContainer = styled(motion.div)`
 `;
 
 export const StyledSkill0 = styled(motion.div)`
-  cursor: url("https://i.imgur.com/pVes9qo.png"), auto;
+  /*cursor: url("https://i.imgur.com/pVes9qo.png"), auto;*/
   min-height: 10vh;
 `;
 
 export const StyledSkill1 = styled(motion.div)`
-  cursor: url("https://i.imgur.com/rzRUvGM.png"), auto;
+  /*cursor: url("https://i.imgur.com/rzRUvGM.png"), auto;*/
   min-height: 10vh;
   width: 100%;
   h1 {
@@ -85,7 +85,7 @@ export const StyledSkill1 = styled(motion.div)`
 `;
 
 export const StyledSkill2 = styled(motion.div)`
-  cursor: url("https://i.imgur.com/VwMVQvX.png"), auto;
+  /*cursor: url("https://i.imgur.com/VwMVQvX.png"), auto;*/
   min-height: 10vh;
   width: 100%;
   h1 {
@@ -100,7 +100,7 @@ export const StyledSkill2 = styled(motion.div)`
 `;
 
 export const StyledSkill3 = styled(motion.div)`
-  cursor: url("https://i.imgur.com/yVTX9gV.png"), auto;
+  /*cursor: url("https://i.imgur.com/yVTX9gV.png"), auto;*/
   min-height: 10vh;
   width: 100%;
   h1 {
@@ -110,7 +110,7 @@ export const StyledSkill3 = styled(motion.div)`
 `;
 
 export const StyledSkill4 = styled(motion.div)`
-  cursor: url("https://i.imgur.com/uqkkqaQ.png"), auto;
+ /* cursor: url("https://i.imgur.com/uqkkqaQ.png"), auto;*/
   min-height: 10vh;
   width: 100%;
   h1 {
@@ -120,7 +120,7 @@ export const StyledSkill4 = styled(motion.div)`
 `;
 
 export const StyledSkill5 = styled(motion.div)`
-  cursor: url("https://i.imgur.com/ImkgrQ3.png"), auto;
+  /*cursor: url("https://i.imgur.com/ImkgrQ3.png"), auto;*/
   min-height: 10vh;
 `;
 
