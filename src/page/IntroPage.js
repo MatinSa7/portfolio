@@ -38,6 +38,14 @@ const IntroPage = () => {
         >
           Linkedin
         </motion.a>
+        <motion.a
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          target="_blank"
+          href="https://drive.google.com/file/d/1qV1dz_1HT0PycotkTkvjFl5NOmnyQJOh/view?usp=sharing"
+        >
+          Resume
+        </motion.a>
       </StyledLogoArea>
       <StyledIconContainer></StyledIconContainer>
       <StyledDescription>
