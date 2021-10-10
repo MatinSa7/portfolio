@@ -167,6 +167,7 @@ const StyledLogoArea = styled(motion.div)`
     color: black;
     margin-top: 3vh;
     margin-left: 3vw;
+    font-size: calc(0.5vw + 0.5rem);
   }
   h1 {
     font-size: calc(3vw + 1rem);
@@ -178,6 +179,9 @@ const StyledLogoArea = styled(motion.div)`
 `;
 
 const StyledLineContainer = styled(motion.div)`
+  a {
+    cursor: url("https://i.imgur.com/eANvpGO.png"), auto;
+  }
   position: relative;
   margin: 0.5rem 0;
 `;
