@@ -17,6 +17,7 @@ import Pulsate from "../components/Pulsate";
 import Mattify from "../components/Mattify";
 import Gym from "../components/Gym";
 import Website from "../components/Website";
+import Ignite from "../components/Ignite";
 
 const ProjectsPage = () => {
   const [element, controls] = useScroll();
@@ -27,6 +28,7 @@ const ProjectsPage = () => {
   const [clickStatus5, setClickStatus5] = useState(false);
   const [clickStatus6, setClickStatus6] = useState(false);
   const [clickStatus7, setClickStatus7] = useState(false);
+  const [clickStatus8, setClickStatus8] = useState(false);
   const [offset, setOffset] = useState(0);
 
   /*useEffect(() => {
@@ -56,6 +58,12 @@ const ProjectsPage = () => {
           Pulsate
         </motion.p>
       </StyledCardContainer>
+      <StyledCardContainer onClick={() => setClickStatus5(!clickStatus5)}>
+        {clickStatus5 === true && <Mattify />}
+        <motion.p whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="">
+          Mattify
+        </motion.p>
+      </StyledCardContainer>
       <StyledCardContainer onClick={() => setClickStatus3(!clickStatus3)}>
         {clickStatus3 === true && <ExamScheduling />}
         <motion.p
@@ -66,6 +74,12 @@ const ProjectsPage = () => {
           Exam Invigilation Scheduling
         </motion.p>
       </StyledCardContainer>
+      <StyledCardContainer onClick={() => setClickStatus8(!clickStatus8)}>
+        {clickStatus8 === true && <Ignite />}
+        <motion.p whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="">
+          Ignite
+        </motion.p>
+      </StyledCardContainer>
       <StyledCardContainer onClick={() => setClickStatus4(!clickStatus4)}>
         {clickStatus4 === true && <CLNx />}
         <motion.p whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="">
@@ -73,12 +87,6 @@ const ProjectsPage = () => {
         </motion.p>
       </StyledCardContainer>
 
-      <StyledCardContainer onClick={() => setClickStatus5(!clickStatus5)}>
-        {clickStatus5 === true && <Mattify />}
-        <motion.p whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="">
-          Mattify
-        </motion.p>
-      </StyledCardContainer>
       <StyledCardContainer onClick={() => setClickStatus6(!clickStatus6)}>
         {clickStatus6 === true && <Gym />}
         <motion.p whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="">
