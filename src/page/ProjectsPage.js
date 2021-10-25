@@ -138,6 +138,9 @@ const StyledCardContainer = styled(motion.div)`
     font-size: calc(1.5vw + 1rem);
     text-decoration: underline;
   }
+  @media (max-width: 812px) {
+    min-height: 10vh; 
+  }
 `;
 
 const StyledImageContainer = styled(motion.div)`

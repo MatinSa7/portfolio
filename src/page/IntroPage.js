@@ -128,7 +128,6 @@ const StyledHide = styled.div`
 const StyledIntroPageContainer = styled(motion.div)`
   width: 80%;
   margin: auto;
-  overflow: hidden;
   cursor: url("https://i.imgur.com/eANvpGO.png"), auto;
 `;
 
