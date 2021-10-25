@@ -35,6 +35,9 @@ const StyledCardShadow = styled(motion.div)`
   top: 0;
   left: 0;
   z-index: 100;
+  @media (max-width: 812px) {
+    padding-top: 10vh;
+  }
 `;
 
 const Detail = styled(motion.div)`
@@ -49,9 +52,16 @@ const Detail = styled(motion.div)`
   a {
     font-size: 1rem;
     color: black;
+    word-wrap: break-word;
   }
   img {
     width: 100%;
+  }
+   @media (max-width: 812px) {
+    width: 90%;
+    padding: 2rem 3rem;
+    margin: auto;
+    left: 5%;
   }
 `;
 

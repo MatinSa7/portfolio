@@ -10,17 +10,15 @@ const Pulsate = () => {
   return (
     <StyledCardShadow>
       <Detail initial="hidden" animate="show" variants={pageAnimationCard}>
-        Pulsate is a basic productivity website where you can journal, use a
-        pomodoro timer to work, as well as listen to brief headspace mediations
-        audio. <br />
-        <br /> Technical skills used: Figma, HTML/CSS/Javascript (React - styled
-        components, Hash router, framer-motion, basic svg animations)
-        <br />
-        <br />
-        Webapp link:{" "}
+        This was a landing page I created for Pulsate, a productivity themed
+        app.{" "}
         <a target="_blank" href="https://matinsa7.github.io/pulsate/">
-          https://matinsa7.github.io/pulsate/{" "}
+          Try it here!{" "}
         </a>{" "}
+        <br />
+        <br /> Technical skills used: Figma, HTML/CSS/Javascript (React - styled
+        components, framer-motion, basic svg animations)
+        <br />
         <br />
         Github:{" "}
         <a target="_blank" href="https://github.com/MatinSa7/pulsate">
@@ -40,6 +38,9 @@ const StyledCardShadow = styled(motion.div)`
   top: 0;
   left: 0;
   z-index: 100;
+  @media (max-width: 812px) {
+    padding-top: 10vh;
+  }
 `;
 
 const Detail = styled(motion.div)`
@@ -54,9 +55,16 @@ const Detail = styled(motion.div)`
   a {
     font-size: 1rem;
     color: black;
+    word-wrap: break-word;
   }
   img {
     width: 100%;
+  }
+   @media (max-width: 812px) {
+    width: 90%;
+    padding: 2rem 3rem;
+    margin: auto;
+    left: 5%;
   }
 `;
 

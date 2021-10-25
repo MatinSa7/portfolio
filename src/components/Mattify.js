@@ -13,12 +13,11 @@ const Mattify = () => {
         Mattify was a music player app that I created during an online course I
         was taking for react by Dev Ed. This course taught me a lot about
         thinking in terms of components, and how logic fits into html and css.{" "}
+        <a target="_blank" href="https://matinsa7.github.io/music_player/">
+          Try it here!{" "}
+        </a>
         <br />
         <br /> Technical skills used: HTML/Sass/Javascript (React) <br />
-        <br /> Webapp link:{" "}
-        <a target="_blank" href="https://matinsa7.github.io/music_player/">
-          https://matinsa7.github.io/music_player/
-        </a>
         <br />
         Github:{" "}
         <a target="_blank" href="https://github.com/MatinSa7/music_player">
@@ -38,6 +37,9 @@ const StyledCardShadow = styled(motion.div)`
   top: 0;
   left: 0;
   z-index: 100;
+  @media (max-width: 812px) {
+    padding-top: 10vh;
+  }
 `;
 
 const Detail = styled(motion.div)`
@@ -52,9 +54,16 @@ const Detail = styled(motion.div)`
   a {
     font-size: 1rem;
     color: black;
+    word-wrap: break-word;
   }
   img {
     width: 100%;
+  }
+   @media (max-width: 812px) {
+    width: 90%;
+    padding: 2rem 3rem;
+    margin: auto;
+    left: 5%;
   }
 `;
 
