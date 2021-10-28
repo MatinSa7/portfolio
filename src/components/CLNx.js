@@ -15,7 +15,7 @@ const CLNx = () => {
         constructed Hierarchal Task Analysis diagrams to understand current
         implementation of feature. We then created low fidelity prototypes and
         performed heuristic evaluations to choose optimal design. After choosing
-        prototype, we performed usability testing and graphically analyzed
+        our prototype, we performed usability testing and graphically analyzed
         results.
       </Detail>
     </StyledCardShadow>
