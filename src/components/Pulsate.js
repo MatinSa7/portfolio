@@ -16,8 +16,8 @@ const Pulsate = () => {
           Try it here!{" "}
         </a>{" "}
         <br />
-        <br /> Technical skills used: Figma, HTML/CSS/Javascript (React - styled
-        components, framer-motion, basic svg animations)
+        <br /> Technical skills used: Figma, HTML/StyledComponents/Javascript
+        (React, framer-motion, basic svg animations)
         <br />
         <br />
         Github:{" "}
@@ -60,7 +60,7 @@ const Detail = styled(motion.div)`
   img {
     width: 100%;
   }
-   @media (max-width: 812px) {
+  @media (max-width: 812px) {
     width: 90%;
     padding: 2rem 3rem;
     margin: auto;

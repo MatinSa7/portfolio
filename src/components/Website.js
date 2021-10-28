@@ -13,8 +13,8 @@ const Website = () => {
         I created this website from scratch (no templates) using all the front
         end skills I've self learned! <br />
         <br />
-        Technical skills used: HTML/CSS/Javascript (React-styled components,
-        framer motion)
+        Technical skills used: HTML/StyledComponents/Javascript (React, framer
+        motion)
         <br />
         <br />
         Github:{" "}
@@ -57,7 +57,7 @@ const Detail = styled(motion.div)`
   img {
     width: 100%;
   }
-   @media (max-width: 812px) {
+  @media (max-width: 812px) {
     width: 90%;
     padding: 2rem 3rem;
     margin: auto;
