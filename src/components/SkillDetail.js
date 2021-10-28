@@ -10,9 +10,10 @@ const SkillDetail = () => {
     <StyledHide>
       <StyledCardShadow>
         <Detail initial="hidden" animate="show" variants={pageAnimationCard}>
-          Technical Tools: Java (JDBC, Gurobi), Python (Selenium, Pandas, Data
-          visualization), MySQL, HTML, CSS (StyledComponents, Sass), Javascript
-          (React, Axios, Redux, framer-motion) <br /> <br />
+          Technical Tools: Java (JDBC, Gurobi), Python (Selenium, Pandas,
+          SciKit-Learn, Matplotlib, Seaborn), MySQL, HTML, CSS
+          (StyledComponents, Sass), Javascript (React, Axios, Redux,
+          framer-motion) <br /> <br />
           Creative Tools: Figma, Adobe Illustrator/Photoshop <br /> <br />
           Knowledge: Data structures and algorithms, basic descriptive and
           inferential statistics, deterministic/stochastic operations research
