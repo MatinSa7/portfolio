@@ -9,7 +9,7 @@ import lowfidproto from "../image/lowfidproto.png";
 import clnxdefault from "../image/clnxdefault.png";
 import { useScroll } from "../components/useScroll";
 import { scrollReveal } from "../animation";
-import { lineAnimation5 } from "../animation";
+import { lineAnimation6 } from "../animation";
 import ExamScheduling from "../components/ExamScheduling";
 import StableMatching from "../components/StableMatching";
 import CLNx from "../components/CLNx";
@@ -45,7 +45,15 @@ const ProjectsPage = () => {
       animate={controls}
       initial="hidden"
     >
-      <h1>Projects:</h1>
+      <StyledLineContainer>
+        <h1>Projects.</h1>
+        <StyledLine
+          initial="hidden"
+          animate={controls}
+          ref={element}
+          variants={lineAnimation6}
+        ></StyledLine>
+      </StyledLineContainer>
       <StyledCardContainer onClick={() => setClickStatus1(!clickStatus1)}>
         {clickStatus1 === true && <StableMatching />}
         <motion.p whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="">
@@ -110,7 +118,7 @@ const StyledLineContainer = styled(motion.div)`
 
 const StyledLine = styled(motion.div)`
   position: absolute;
-  background: #ff3f00;
+  background: #16db65;
   bottom: 15%;
   z-index: -1;
   height: 25%;
@@ -139,7 +147,7 @@ const StyledCardContainer = styled(motion.div)`
     text-decoration: underline;
   }
   @media (max-width: 812px) {
-    min-height: 10vh; 
+    min-height: 10vh;
   }
 `;
 

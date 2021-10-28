@@ -62,6 +62,19 @@ export const lineAnimation5 = {
   },
 };
 
+export const lineAnimation6 = {
+  hidden: {
+    width: 0,
+  },
+  show: {
+    width: "25%",
+    transition: {
+      duration: 1.5,
+      ease: "easeOut",
+    },
+  },
+};
+
 export const pageAnimation = {
   hidden: {
     opacity: 0,
