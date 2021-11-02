@@ -10,8 +10,7 @@ const Pulsate = () => {
   return (
     <StyledCardShadow>
       <Detail initial="hidden" animate="show" variants={pageAnimationCard}>
-        This was a landing page I created for Pulsate, a productivity themed
-        app.{" "}
+        A landing page I created for Pulsate, a productivity themed app.{" "}
         <a target="_blank" href="https://matinsa7.github.io/pulsate/">
           Try it here!{" "}
         </a>{" "}
