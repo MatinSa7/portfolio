@@ -140,7 +140,7 @@ const StyledCardContainer = styled(motion.div)`
   display: flex;
   align-items: center;
   margin-top: 2vh;
-  min-height: 20vh;
+  min-height: 15vh;
   p {
     color: black;
     font-size: calc(1.5vw + 1rem);

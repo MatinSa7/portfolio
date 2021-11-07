@@ -41,7 +41,7 @@ export const lineAnimation4 = {
     width: 0,
   },
   show: {
-    width: "26%",
+    width: "44%",
     transition: {
       duration: 1.5,
       ease: "easeOut",
