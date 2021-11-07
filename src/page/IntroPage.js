@@ -148,6 +148,9 @@ const StyledList = styled(motion.ul)`
 `;
 
 const StyledDescription = styled(motion.div)`
+  @media (max-width: 360px) {
+    padding-left: 3rem;
+  }
   display: flex;
   align-items: center;
   justify-content: center;

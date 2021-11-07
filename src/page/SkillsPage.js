@@ -1,14 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styled, { keyframes } from "styled-components";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
 import { lineAnimation4 } from "../animation";
 import SkillDetail from "../components/SkillDetail";
+import { useInView } from "react-intersection-observer";
 
 import { useScroll } from "../components/useScroll";
 import { scrollReveal } from "../animation";
 
+import Typewriter from "typewriter-effect";
+
 const SkillsPage = () => {
+  const [ref, isVisibile] = useInView({ threshold: 0.2 });
   const [element, controls] = useScroll();
   const [hoverStatus, setHoverStatus] = useState(0);
   const [clickStatusSkill, setClickStatusSkill] = useState(false);
@@ -23,8 +27,6 @@ const SkillsPage = () => {
       onClick={() => setClickStatusSkill(!clickStatusSkill)}
     >
       {clickStatusSkill === true && <SkillDetail />}
-      <StyledSkill0></StyledSkill0>
-      <StyledSkill1></StyledSkill1>
       <StyledSkill2>
         <StyledLineContainer>
           <h1>Skills.</h1>
@@ -37,12 +39,63 @@ const SkillsPage = () => {
         </StyledLineContainer>
         <p>(Click for Details)</p>
       </StyledSkill2>
-      <StyledSkill3></StyledSkill3>
-      <StyledSkill4></StyledSkill4>
-      <StyledSkill5></StyledSkill5>
+      <OuterSkillDescription ref={ref}>
+        <TypeWrittenHeading>
+          {isVisibile === true && (
+            <Typewriter
+              options={{ cursorClassName: "Typewriter" }}
+              onInit={(typewriter) => {
+                typewriter.pauseFor(0).typeString("Java.").start();
+              }}
+            />
+          )}
+        </TypeWrittenHeading>
+        <TypeWrittenHeading>
+          {isVisibile === true && (
+            <Typewriter
+              options={{ cursorClassName: "Typewriter" }}
+              onInit={(typewriter) => {
+                typewriter.pauseFor(1000).typeString("Python.").start();
+              }}
+            />
+          )}
+        </TypeWrittenHeading>
+        <TypeWrittenHeading>
+          {isVisibile === true && (
+            <Typewriter
+              options={{ cursorClassName: "Typewriter" }}
+              onInit={(typewriter) => {
+                typewriter.pauseFor(2000).typeString("SQL.").start();
+              }}
+            />
+          )}
+        </TypeWrittenHeading>
+        <TypeWrittenHeading>
+          {isVisibile === true && (
+            <Typewriter
+              options={{ cursorClassName: "Typewriter" }}
+              onInit={(typewriter) => {
+                typewriter.pauseFor(3000).typeString("HTML/CSS/JS.").start();
+              }}
+            />
+          )}
+        </TypeWrittenHeading>
+      </OuterSkillDescription>
     </StyledSkillsContainer>
   );
 };
+
+const TypeWrittenHeading = styled(motion.div)`
+  font-size: calc(1rem + 0.8vw);
+  @media (max-width: 437px) {
+    font-size: calc(0.8rem);
+  }
+`;
+
+const OuterSkillDescription = styled(motion.div)`
+  padding-top: 1rem;
+  font-size: 1rem;
+`;
 
 const StyledLineContainer = styled(motion.div)`
   position: relative;
@@ -59,12 +112,28 @@ const StyledLine = styled(motion.div)`
 `;
 
 export const StyledSkillsContainer = styled(motion.div)`
+  display: flex;
   width: 80%;
   margin: auto;
-  min-height: 80vh;
+  min-height: 50vh;
   a {
     text-decoration: none;
     color: black;
+  }
+`;
+
+export const StyledSkill2 = styled(motion.div)`
+  /*cursor: url("https://i.imgur.com/VwMVQvX.png"), auto;*/
+  min-height: 10vh;
+  width: 60%;
+  h1 {
+    font-weight: 300;
+    font-size: calc(8vw + 1rem);
+  }
+  p {
+    padding-left: 0.8rem;
+    font-weight: 400;
+    font-size: calc(1vw + 0.2rem);
   }
 `;
 
@@ -84,21 +153,6 @@ export const StyledSkill1 = styled(motion.div)`
   }
 `;
 
-export const StyledSkill2 = styled(motion.div)`
-  /*cursor: url("https://i.imgur.com/VwMVQvX.png"), auto;*/
-  min-height: 10vh;
-  width: 100%;
-  h1 {
-    font-weight: 300;
-    font-size: calc(8vw + 1rem);
-  }
-  p {
-    padding-left: 0.8rem;
-    font-weight: 400;
-    font-size: calc(1vw + 0.2rem);
-  }
-`;
-
 export const StyledSkill3 = styled(motion.div)`
   /*cursor: url("https://i.imgur.com/yVTX9gV.png"), auto;*/
   min-height: 10vh;
@@ -110,7 +164,7 @@ export const StyledSkill3 = styled(motion.div)`
 `;
 
 export const StyledSkill4 = styled(motion.div)`
- /* cursor: url("https://i.imgur.com/uqkkqaQ.png"), auto;*/
+  /* cursor: url("https://i.imgur.com/uqkkqaQ.png"), auto;*/
   min-height: 10vh;
   width: 100%;
   h1 {
