@@ -112,10 +112,14 @@ const StyledLine = styled(motion.div)`
 `;
 
 export const StyledSkillsContainer = styled(motion.div)`
+  @media (max-width: 437px) {
+    min-height: 25vh;
+  }
+  min-height: 60vh;
   display: flex;
   width: 80%;
   margin: auto;
-  min-height: 50vh;
+
   a {
     text-decoration: none;
     color: black;
