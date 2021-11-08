@@ -60,12 +60,12 @@ const ProjectsPage = () => {
           Stable Matching Solver
         </motion.p>
       </StyledCardContainer>
-      <StyledCardContainer onClick={() => setClickStatus2(!clickStatus2)}>
+      {/*<StyledCardContainer onClick={() => setClickStatus2(!clickStatus2)}>
         {clickStatus2 === true && <Pulsate />}
         <motion.p whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="">
           Pulsate
         </motion.p>
-      </StyledCardContainer>
+      </StyledCardContainer> */}
       <StyledCardContainer onClick={() => setClickStatus5(!clickStatus5)}>
         {clickStatus5 === true && <Mattify />}
         <motion.p whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="">
