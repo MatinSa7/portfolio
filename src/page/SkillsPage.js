@@ -43,7 +43,8 @@ const SkillsPage = () => {
         <TypeWrittenHeading>
           {isVisibile === true && (
             <Typewriter
-              options={{ cursorClassName: "Typewriter" }}
+              options={{ cursorClassName: "Typewriter", delay: 75}}
+    
               onInit={(typewriter) => {
                 typewriter.pauseFor(0).typeString("Java.").start();
               }}
@@ -53,9 +54,9 @@ const SkillsPage = () => {
         <TypeWrittenHeading>
           {isVisibile === true && (
             <Typewriter
-              options={{ cursorClassName: "Typewriter" }}
+              options={{ cursorClassName: "Typewriter", delay: 75 }}
               onInit={(typewriter) => {
-                typewriter.pauseFor(1000).typeString("Python.").start();
+                typewriter.pauseFor(700).typeString("Python.").start();
               }}
             />
           )}
@@ -63,9 +64,9 @@ const SkillsPage = () => {
         <TypeWrittenHeading>
           {isVisibile === true && (
             <Typewriter
-              options={{ cursorClassName: "Typewriter" }}
+              options={{ cursorClassName: "Typewriter", delay: 75 }}
               onInit={(typewriter) => {
-                typewriter.pauseFor(2000).typeString("SQL.").start();
+                typewriter.pauseFor(1400).typeString("SQL.").start();
               }}
             />
           )}
@@ -73,9 +74,9 @@ const SkillsPage = () => {
         <TypeWrittenHeading>
           {isVisibile === true && (
             <Typewriter
-              options={{ cursorClassName: "Typewriter" }}
+              options={{ cursorClassName: "Typewriter", delay: 75 }}
               onInit={(typewriter) => {
-                typewriter.pauseFor(3000).typeString("HTML/CSS/JS.").start();
+                typewriter.pauseFor(1900).typeString("HTNK/CS").start().pauseFor(120).deleteChars(5).typeString("ML/CSS").pauseFor(50).typeString("/JS.")
               }}
             />
           )}
