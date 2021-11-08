@@ -43,8 +43,7 @@ const SkillsPage = () => {
         <TypeWrittenHeading>
           {isVisibile === true && (
             <Typewriter
-              options={{ cursorClassName: "Typewriter", delay: 75}}
-    
+              options={{ cursorClassName: "Typewriter", delay: 75 }}
               onInit={(typewriter) => {
                 typewriter.pauseFor(0).typeString("Java.").start();
               }}
@@ -76,7 +75,16 @@ const SkillsPage = () => {
             <Typewriter
               options={{ cursorClassName: "Typewriter", delay: 75 }}
               onInit={(typewriter) => {
-                typewriter.pauseFor(1900).typeString("HTNK/CS").start().pauseFor(120).deleteChars(5).typeString("ML/CSS").pauseFor(50).typeString("/JS.")
+                typewriter
+                  .pauseFor(1900)
+                  .typeString("HTNK/CS")
+                  .start()
+                  .pauseFor(120)
+                  .deleteChars(5)
+                  .pauseFor(100)
+                  .typeString("ML/CSS")
+                  .pauseFor(50)
+                  .typeString("/JS.");
               }}
             />
           )}
