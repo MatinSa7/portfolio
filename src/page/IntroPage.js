@@ -78,7 +78,7 @@ const IntroPage = () => {
               variants={descriptionAnimation}
             >
               <small
-                onClick={() => window.scrollBy(0, 0.9 * window.innerHeight)}
+                onClick={() => window.scrollBy(0, 0.6 * window.innerHeight)}
               >
                 Skills
               </small>
@@ -98,7 +98,7 @@ const IntroPage = () => {
               variants={descriptionAnimation}
             >
               <small
-                onClick={() => window.scrollBy(0, 1.8 * window.innerHeight)}
+                onClick={() => window.scrollBy(0, 1.6 * window.innerHeight)}
               >
                 Projects
               </small>

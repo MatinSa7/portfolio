@@ -39,6 +39,9 @@ const StyledCardShadow = styled(motion.div)`
 const Detail = styled(motion.div)`
   width: 80%;
   border-radius: 3rem;
+   border-style: solid;
+  border-width: 2.2px;
+  box-shadow: 8px 10px;
   padding: 2rem 5rem;
   background: white;
   position: absolute;
