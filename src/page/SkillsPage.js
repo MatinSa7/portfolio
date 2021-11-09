@@ -18,6 +18,16 @@ const SkillsPage = () => {
   const [clickStatusSkill, setClickStatusSkill] = useState(false);
   const [offset, setOffset] = useState(0);
 
+  function makeid(length) {
+    var result = "";
+    var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    var charactersLength = characters.length;
+    for (var i = 0; i < length; i++) {
+      result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+    return result;
+  }
+
   return (
     <StyledSkillsContainer
       variants={scrollReveal}
@@ -77,7 +87,9 @@ const SkillsPage = () => {
               onInit={(typewriter) => {
                 typewriter
                   .pauseFor(1900)
-                  .typeString("HTNK/CS")
+                  .typeString("HT")
+                  .typeString(makeid(2))
+                  .typeString("/CS")
                   .start()
                   .pauseFor(120)
                   .deleteChars(5)
