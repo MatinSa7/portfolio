@@ -18,7 +18,7 @@ const StableMatching = () => {
         the optimal matching and minimize regret using the Gale Shapley
         algorithm. <br />
         <br />
-        Technical tools used: Java, Excel <br /> Other skills: data structures
+        Technical tools used: Java<br /> Other skills: data structures
         and algorithms
       </Detail>
     </StyledCardShadow>

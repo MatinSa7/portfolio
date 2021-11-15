@@ -10,9 +10,8 @@ const Mattify = () => {
   return (
     <StyledCardShadow>
       <Detail initial="hidden" animate="show" variants={pageAnimationCard}>
-        Mattify was a music player app that I created during an online course I
-        was taking for react by Dev Ed. This course taught me a lot about
-        thinking in terms of components, and how logic fits into html and css.{" "}
+        Mattify is a music player app. Music/art sourced directly from
+        Chillhop.com.{" "}
         <a target="_blank" href="https://matinsa7.github.io/music_player/">
           Try it here!{" "}
         </a>
@@ -45,7 +44,7 @@ const StyledCardShadow = styled(motion.div)`
 const Detail = styled(motion.div)`
   width: 80%;
   border-radius: 3rem;
-   border-style: solid;
+  border-style: solid;
   border-width: 2.2px;
   box-shadow: 8px 10px;
   padding: 2rem 5rem;
@@ -62,7 +61,7 @@ const Detail = styled(motion.div)`
   img {
     width: 100%;
   }
-   @media (max-width: 812px) {
+  @media (max-width: 812px) {
     width: 90%;
     padding: 2rem 3rem;
     margin: auto;

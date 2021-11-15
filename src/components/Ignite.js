@@ -10,10 +10,8 @@ const Ignite = () => {
   return (
     <StyledCardShadow>
       <Detail initial="hidden" animate="show" variants={pageAnimationCard}>
-        Ignite was a game information web app that I created during an online
-        course I was taking by Dev Ed. Working on this project made me familiar
-        with using Axios to fetch data from APIs, as well as using Redux and
-        becoming familiar with state management.{" "}
+        Ignite is a game information webapp that allows the user to search and
+        display data fetched from the RAWG API.{" "}
         <a target="_blank" href="https://matinsa7.github.io/ignite/">
           Try it here!
         </a>{" "}
@@ -52,7 +50,7 @@ const Detail = styled(motion.div)`
   word-wrap: break-word;
   width: 80%;
   border-radius: 3rem;
-   border-style: solid;
+  border-style: solid;
   border-width: 2.2px;
   box-shadow: 8px 10px;
   padding: 2rem 5rem;
@@ -64,7 +62,7 @@ const Detail = styled(motion.div)`
   img {
     width: 100%;
   }
-   @media (max-width: 812px) {
+  @media (max-width: 812px) {
     width: 90%;
     padding: 2rem 3rem;
     margin: auto;
