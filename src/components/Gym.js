@@ -10,13 +10,20 @@ const Gym = () => {
   return (
     <StyledCardShadow>
       <Detail initial="hidden" animate="show" variants={pageAnimationCard}>
-        Picture this, you're at the weird time where covid cases are high, but
-        non essential places like the gym are still open, but at a 10 person
-        capacity where prior booking is mandatory to get in. Everyone's fighting
-        for time slots as the initial lucky ten cancel last minute. I really
-        want to go to the gym, but I hate wasting time to book, and I notice
-        they have no captcha system. What do I do? I go home and create a bot to
-        book for me everyday. All the slots I need are mine. <br />
+        Picture this. You're at the time when covid cases are high but non
+        essential places like the gym are still open at a 10 person capacity
+        where prior booking is mandatory to get in. Everyone's fighting for time
+        slots as the initial lucky ten cancel last minute. Bookings dissapear
+        like{" "}
+        <a
+          href="https://www.nssmag.com/en/fashion/18056/in-quanti-secondi-vanno-sold-out-gli-item-supreme"
+          target="_blank"
+        >
+          Supreme drops
+        </a>{" "}
+        but I notice they have no captcha system. The operation couldn't be any
+        more clear. After going home and creating a bot to book for me, all the
+        slots I need are mine. <br />
         <br />
         Technical skills used: Python (Selenium)
       </Detail>
@@ -41,7 +48,7 @@ const StyledCardShadow = styled(motion.div)`
 const Detail = styled(motion.div)`
   width: 80%;
   border-radius: 3rem;
-   border-style: solid;
+  border-style: solid;
   border-width: 2.2px;
   box-shadow: 8px 10px;
   padding: 2rem 5rem;
@@ -50,10 +57,15 @@ const Detail = styled(motion.div)`
   left: 10%;
   color: black;
   z-index: 100;
+  a {
+    font-size: 1rem;
+    color: black;
+    word-wrap: break-word;
+  }
   img {
     width: 100%;
   }
-   @media (max-width: 812px) {
+  @media (max-width: 812px) {
     width: 90%;
     padding: 2rem 3rem;
     margin: auto;
