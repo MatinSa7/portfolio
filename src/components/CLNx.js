@@ -1,12 +1,9 @@
-import React, { useState } from "react";
-import styled, { keyframes } from "styled-components";
+import React from "react";
+import styled from "styled-components";
 import { motion } from "framer-motion";
-import { useLocation } from "react-router-dom";
 import { pageAnimationCard } from "../animation";
 
 const CLNx = () => {
-  const { pathname } = useLocation();
-
   return (
     <StyledCardShadow>
       <Detail initial="hidden" animate="show" variants={pageAnimationCard}>
@@ -39,7 +36,7 @@ const StyledCardShadow = styled(motion.div)`
 const Detail = styled(motion.div)`
   width: 80%;
   border-radius: 3rem;
-   border-style: solid;
+  border-style: solid;
   border-width: 2.2px;
   box-shadow: 8px 10px;
   padding: 2rem 5rem;
