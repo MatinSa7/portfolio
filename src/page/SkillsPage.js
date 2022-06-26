@@ -1,22 +1,17 @@
-import React, { useState, useEffect, useRef } from "react";
-import styled, { keyframes } from "styled-components";
+import React, { useState } from "react";
+import styled from "styled-components";
 import { motion } from "framer-motion";
-import { useLocation } from "react-router-dom";
 import { lineAnimation4 } from "../animation";
 import SkillDetail from "../components/SkillDetail";
 import { useInView } from "react-intersection-observer";
-
 import { useScroll } from "../components/useScroll";
 import { scrollReveal } from "../animation";
-
 import Typewriter from "typewriter-effect";
 
 const SkillsPage = () => {
   const [ref, isVisibile] = useInView({ threshold: 0.2 });
   const [element, controls] = useScroll();
-  const [hoverStatus, setHoverStatus] = useState(0);
   const [clickStatusSkill, setClickStatusSkill] = useState(false);
-  const [offset, setOffset] = useState(0);
 
   function makeid(length) {
     var result = "";

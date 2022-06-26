@@ -11,8 +11,8 @@ import {
 } from "../animation";
 
 const IntroPage = () => {
-  const { pathname } = useLocation();
   const [hoverStatus, setHoverStatus] = useState(1);
+
   return (
     <StyledIntroPageContainer
       initial="hidden"
@@ -49,11 +49,7 @@ const IntroPage = () => {
       </StyledLogoArea>
       <StyledIconContainer></StyledIconContainer>
       <StyledDescription>
-        <p>
-          Hi, My name is Matin and I like to code! <br /> I find deep
-          satisfaction in learning things I feel will benefit me and love to
-          explore new technologies I can implement in projects.
-        </p>
+        <p>Matin Sarahi</p>
         <StyledList>
           <StyledHide>
             <StyledLineContainer
