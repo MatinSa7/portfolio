@@ -5,17 +5,15 @@ import { useLocation } from "react-router-dom";
 import { pageAnimationCard } from "../animation";
 
 const ExamScheduling = () => {
-  const { pathname } = useLocation();
-
   return (
     <StyledCardShadow>
       <Detail initial="hidden" animate="show" variants={pageAnimationCard}>
-        In this project, I worked in a group of four to work with client Khoan
-        Doan of the U of T registrar office to create flow and basic simulation
-        for exam invigilation scheduling. We used a basic regret system where
-        exam invigilators could rank their order of preference of certain
-        shifts, and by creating a score out of 3 the shift was given depending
-        on their relative ranking. <br />
+        In this project, I worked in a group of four to work with the U of T
+        registrar office to create the flow and a basic simulation for exam
+        invigilation scheduling. We used a regret system where exam invigilators
+        could rank their order of preference of certain shifts, and were
+        assigned an optimal shift based on a calculated three point score.{" "}
+        <br />
         <br />
         Technical tools used: Python <br />
         Other skills: design iterations after meeting with client, flow diagram
@@ -41,7 +39,7 @@ const StyledCardShadow = styled(motion.div)`
 const Detail = styled(motion.div)`
   width: 80%;
   border-radius: 3rem;
-   border-style: solid;
+  border-style: solid;
   border-width: 2.2px;
   box-shadow: 8px 10px;
   padding: 2rem 5rem;
@@ -53,7 +51,7 @@ const Detail = styled(motion.div)`
   img {
     width: 100%;
   }
-   @media (max-width: 812px) {
+  @media (max-width: 812px) {
     width: 90%;
     padding: 2rem 3rem;
     margin: auto;
