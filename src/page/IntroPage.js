@@ -42,7 +42,7 @@ const IntroPage = () => {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           target="_blank"
-          href="https://drive.google.com/file/d/1qWTO6Uvrfc9DeeoT7X7WjSwWvwo6aJ_o/view?usp=sharing"
+          href="https://drive.google.com/file/d/1Hpb18AFYfLwV67luRIGpR9ezQkVLp4nM/view?usp=sharing"
         >
           Resume
         </motion.a>
@@ -177,11 +177,11 @@ const StyledLogoArea = styled(motion.div)`
 `;
 
 const StyledLineContainer = styled(motion.div)`
-  a {
-    cursor: url("https://i.imgur.com/eANvpGO.png"), auto;
-  }
   position: relative;
   margin: 0.5rem 0;
+  small {
+    cursor: pointer;
+  }
 `;
 
 const StyledLine = styled(motion.div)`

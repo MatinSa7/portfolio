@@ -135,6 +135,7 @@ export const StyledSkillsContainer = styled(motion.div)`
   display: flex;
   width: 80%;
   margin: auto;
+  cursor: pointer;
 
   a {
     text-decoration: none;

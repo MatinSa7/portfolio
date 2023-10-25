@@ -10,12 +10,12 @@ const SkillDetail = () => {
     <StyledHide>
       <StyledCardShadow>
         <Detail initial="hidden" animate="show" variants={pageAnimationCard}>
-          Technical Tools: Java, Python (Selenium, Pandas, NumPy, SciKit-Learn,
-          Matplotlib, Seaborn), SQL, HTML, CSS (StyledComponents, Sass),
-          Javascript (React, Redux, Node) <br /> <br />
-          Creative Tools: Figma, Adobe Illustrator/Photoshop <br /> <br />
-          Knowledge: Data structures and algorithms, UI/UX design, Database
-          design, Deterministic/Stochastic operations research
+          <bold>Languages:</bold> Python, Java, Javascript <br /> <br />
+          <bold>Web Dev Skills:</bold> Django/Django Rest Framework, EmberJs, NodeJs, XState, Redux <br /> <br />
+          <bold>Data Analytics/ML Skills:</bold> SQL, Pandas, SciKit-Learn, Data Visualization <br /> <br />
+          <bold>Creative Tools:</bold> Figma, Adobe Illustrator/Photoshop <br /> <br />
+          <bold>Knowledge:</bold> Data structures and algorithms, UI/UX design, Database
+          design, Data analytics
         </Detail>
       </StyledCardShadow>
     </StyledHide>

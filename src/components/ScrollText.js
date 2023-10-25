@@ -6,13 +6,13 @@ const ScrollText = () => {
   return (
     <ScrollTextContainer>
       <StyledTextLine
-        transition={{ duration: 3 }}
+        transition={{ duration: 4.5 }}
         initial={{ width: "0%", opacity: 0 }}
         animate={{ width: "100%", opacity: 1 }}
       ></StyledTextLine>
       <StyledScrollingText>↓ Check out my work ↓</StyledScrollingText>
       <StyledTextLine
-        transition={{ duration: 3 }}
+        transition={{ duration: 4.5 }}
         initial={{ width: "0%", opacity: 0 }}
         animate={{ width: "100%", opacity: 1 }}
       ></StyledTextLine>
