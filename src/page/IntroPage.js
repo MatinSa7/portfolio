@@ -42,7 +42,7 @@ const IntroPage = () => {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           target="_blank"
-          href="https://drive.google.com/file/d/1-7Xjbbn72lvUudXaet6B68O6ldL9Qja6/view?usp=sharing"
+          href="https://drive.google.com/file/d/1hJlswgG2ywe6ihdVWrOIUyF46QG2P1vi/view?usp=sharing"
         >
           Resume
         </motion.a>
